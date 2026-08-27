@@ -83,6 +83,22 @@ Codex 会自动识别新安装的 Skill。如果没有显示，请重启 Codex �
 YOUR_REPOSITORY/.agents/skills/img2pptx
 ```
 
+## 在 Google Antigravity（反重力）中使用
+
+Skill 与 MCP 一键同步（Skill 负责"想"，MCP 负责"算"）：
+
+```bash
+pip install -r mcp/img2pptx_mcp/requirements.txt
+python3 scripts/sync_antigravity.py            # 工作区：.agent/skills/ + .agents/mcp_config.json
+python3 scripts/sync_antigravity.py --global   # 可选：装到 ~/.gemini/antigravity/skills/ 并合并全局 MCP 配置
+```
+
+同步后重启工作区（或在对话框输入 `/mcp`），即可看到 `img2pptx` 服务器提供的
+`render_svg` / `compare_images` / `embed_svg_pptx` / `audit_pptx` 等确定性工具；
+Skill 本体被安装为符合开放 Agent Skills 标准的 `.agent/skills/img2pptx/`
+（入口 `SKILL.md`，完整协议 `PROTOCOL.md`）。详见
+[docs/antigravity.md](docs/antigravity.md)。
+
 ## 更多使用示例
 
 中文：

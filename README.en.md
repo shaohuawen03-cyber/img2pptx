@@ -86,6 +86,20 @@ For a repository-scoped skill, copy it to:
 YOUR_REPOSITORY/.agents/skills/img2pptx
 ```
 
+## Use in Google Antigravity
+
+One command syncs the Skill (protocol) and the MCP server (deterministic tools):
+
+```bash
+pip install -r mcp/img2pptx_mcp/requirements.txt
+python3 scripts/sync_antigravity.py            # workspace: .agent/skills/ + .agents/mcp_config.json
+python3 scripts/sync_antigravity.py --global   # optional: ~/.gemini/antigravity/skills/ + global MCP config
+```
+
+Reopen the workspace (or run `/mcp`) and the `img2pptx` server exposes tools
+such as `render_svg`, `compare_images`, `embed_svg_pptx`, and `audit_pptx`.
+See [docs/antigravity.md](docs/antigravity.md) (Chinese) for details.
+
 ## More usage examples
 
 中文：
