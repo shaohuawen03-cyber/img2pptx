@@ -1,0 +1,32 @@
+{
+ "checks": [
+  {
+   "check": "query_branch_boxes_equal_size_and_row_aligned",
+   "heights": [
+    98.1,
+    98.1,
+    98.1
+   ],
+   "ys": [
+    975.5,
+    975.5,
+    975.5
+   ],
+   "n": 3,
+   "passed": true
+  },
+  {
+   "check": "caption_font_sizes_consistent",
+   "sizes": [
+    24.0
+   ],
+   "passed": true
+  },
+  {
+   "check": "no_text_on_foreign_panel_border",
+   "violations": [],
+   "passed": true
+  }
+ ],
+ "passed": true
+}

@@ -1,0 +1,185 @@
+{
+ "constraints": [
+  {
+   "id": "calibration_rows_sum_to_one",
+   "description": "Each calibration row (0.87/0.11/0.02, 0.05/0.88/0.07, 0.01/0.06/0.93) sums to 1.00 and all 9 values present exactly once",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "values_found": [
+     0.01,
+     0.02,
+     0.05,
+     0.06,
+     0.07,
+     0.11,
+     0.87,
+     0.88,
+     0.93
+    ],
+    "row_sums": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   }
+  },
+  {
+   "id": "query_types_order_precise_polysemous_underdetermined",
+   "description": "Query type titles ordered top->bottom: Precise, Polysemous, Under-determined",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "found": [
+     [
+      "Precise",
+      7102.14,
+      229.0
+     ],
+     [
+      "Polysemous",
+      7061.12,
+      510.0
+     ],
+     [
+      "Under",
+      7054.46,
+      814.0
+     ]
+    ]
+   }
+  },
+  {
+   "id": "threefold_principle_labels",
+   "description": "u-Epistemic Uncertainty, C-Label Consistency, xi-Aleatoric Uncertainty all present",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "found": [
+     "Aleatoric",
+     "Consistency",
+     "Epistemic"
+    ]
+   }
+  },
+  {
+   "id": "evidence_capsules_preserved",
+   "description": "All colored evidence capsules (pink/gray/yellow/green, asset count 18) are preserved verbatim across Dirichlet/embedding groups",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "count_now": 18,
+    "count_asset": 18,
+    "by_group": {
+     "dirichlet_frame": 3,
+     "embeddings_frame": 3,
+     "branch_clip": 4,
+     "embeddings_clip": 4,
+     "connectors_annotations": 4
+    }
+   }
+  },
+  {
+   "id": "fot_dustbin_elements",
+   "description": "FOT panel contains FOT, dustbin label and dustbin bucket",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "labels": [
+     "FOT",
+     "dustbin",
+     "dustbin bucket"
+    ]
+   }
+  },
+  {
+   "id": "panel_b_c_labels",
+   "description": "(b) and (c) sub-figure labels preserved",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "b": [
+     "(b) Uncertainty Guided Identification"
+    ],
+    "c": [
+     "(c) Dynamic Co"
+    ]
+   }
+  },
+  {
+   "id": "loss_terms_L_inter_x2_L_base_x1",
+   "description": "Exactly two L_inter terms (frame & clip) and one L_base term",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "L_inter_count": 2,
+    "L_base_count": 1
+   }
+  },
+  {
+   "id": "all_asset_elements_preserved",
+   "description": "Every asset text/path/rect survives regrouping verbatim (no element dropped or duplicated)",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "texts": [
+     307,
+     307
+    ],
+    "paths": [
+     340,
+     340
+    ],
+    "rects": [
+     140,
+     140
+    ],
+    "note": "asset page-background rect replaced by canvas background"
+   }
+  },
+  {
+   "id": "flow_arrows_preserved",
+   "description": "Blue flow arrows (#139CF4 strokes + arrowhead fills) present",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "stroke_arrows": 2,
+    "arrowheads": 2
+   }
+  },
+  {
+   "id": "no_invented_or_moved_text",
+   "description": "Every text element matches the asset inventory verbatim (no invented text)",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "mismatches": [],
+    "count": 307
+   }
+  },
+  {
+   "id": "photo_crops_embedded_minimal",
+   "description": "4 filmstrip photo crops embedded, each fully inside the canvas strip",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "n_images": 4
+   }
+  }
+ ],
+ "passed": true,
+ "human_review": [
+  {
+   "item": "filmstrip photo crops content accuracy",
+   "status": "needs-human-review",
+   "reason": "photographic content cannot be verified programmatically; crops are taken pixel-exact from the normalized source",
+   "region": "video_strip"
+  },
+  {
+   "item": "text font substitution effect (Cambria/\u7b49 fonts unavailable in sandbox)",
+   "status": "documented-limitation",
+   "reason": "preview renders use DejaVu substitutes; PowerPoint will substitute according to local fonts",
+   "region": "canvas"
+  }
+ ]
+}

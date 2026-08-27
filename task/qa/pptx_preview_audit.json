@@ -1,0 +1,47 @@
+{
+ "checks": [
+  {
+   "check": "svg_part_present",
+   "passed": true
+  },
+  {
+   "check": "embedded_svg_matches_full_svg_by_hash",
+   "sha256": "6f49943dab8c56b41847e449eef8dc969b08f3439d9540c78d12c75655614892",
+   "passed": true
+  },
+  {
+   "check": "svgblip_extension_in_blip",
+   "passed": true
+  },
+  {
+   "check": "rels_for_svg_and_png_fallback",
+   "passed": true
+  },
+  {
+   "check": "png_fallback_present",
+   "passed": true
+  },
+  {
+   "check": "exactly_one_slide",
+   "value": 1,
+   "passed": true
+  },
+  {
+   "check": "svg_content_type_registered",
+   "passed": true
+  },
+  {
+   "check": "nested_groups_and_texts_in_svg",
+   "n_groups": 27,
+   "n_texts": 307,
+   "passed": true
+  },
+  {
+   "check": "no_unsupported_features",
+   "foreignObject/filter": true,
+   "self_contained_data_uri_images": 4,
+   "passed": true
+  }
+ ],
+ "passed": true
+}

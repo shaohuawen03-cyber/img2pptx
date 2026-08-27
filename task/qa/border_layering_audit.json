@@ -1,0 +1,101 @@
+{
+ "containers": [
+  {
+   "id": "panel_query_types",
+   "expected_outline_color": "#5F7837",
+   "has_fill_background": true,
+   "outline_is_last_child": true,
+   "outline_count": 4,
+   "outline_color_ok": true,
+   "stroke_width_asset": 8.59393,
+   "stroke_width_canvas_px": 2.72,
+   "passed": true,
+   "stroke_width_at_1280w_px": 1.41
+  },
+  {
+   "id": "panel_opinion_agg",
+   "expected_outline_color": "#2D4D86",
+   "has_fill_background": true,
+   "outline_is_last_child": true,
+   "outline_count": 22,
+   "outline_color_ok": true,
+   "stroke_width_asset": 8.59393,
+   "stroke_width_canvas_px": 2.72,
+   "passed": true,
+   "stroke_width_at_1280w_px": 1.41
+  },
+  {
+   "id": "panel_fot",
+   "expected_outline_color": "#56305F",
+   "has_fill_background": true,
+   "outline_is_last_child": true,
+   "outline_count": 6,
+   "outline_color_ok": true,
+   "stroke_width_asset": 8.59393,
+   "stroke_width_canvas_px": 2.72,
+   "passed": true,
+   "stroke_width_at_1280w_px": 1.41
+  },
+  {
+   "id": "panel_calibration",
+   "expected_outline_color": "#F3B61B",
+   "has_fill_background": true,
+   "outline_is_last_child": true,
+   "outline_count": 3,
+   "outline_color_ok": true,
+   "stroke_width_asset": 4.8125,
+   "stroke_width_canvas_px": 1.52,
+   "passed": true,
+   "stroke_width_at_1280w_px": 0.79
+  },
+  {
+   "id": "panel_partition",
+   "expected_outline_color": "#FF9D98",
+   "has_fill_background": true,
+   "outline_is_last_child": true,
+   "outline_count": 11,
+   "outline_color_ok": true,
+   "stroke_width_asset": 4.125,
+   "stroke_width_canvas_px": 1.3,
+   "passed": true,
+   "stroke_width_at_1280w_px": 0.67
+  },
+  {
+   "id": "panel_identification",
+   "expected_outline_color": "#999999",
+   "has_fill_background": true,
+   "outline_is_last_child": true,
+   "outline_count": 8,
+   "outline_color_ok": true,
+   "stroke_width_asset": 4.125,
+   "stroke_width_canvas_px": 1.3,
+   "passed": true,
+   "stroke_width_at_1280w_px": 0.67
+  },
+  {
+   "id": "panel_threefold",
+   "expected_outline_color": "#36ADF0",
+   "has_fill_background": true,
+   "outline_is_last_child": true,
+   "outline_count": 5,
+   "outline_color_ok": true,
+   "stroke_width_asset": 6.875,
+   "stroke_width_canvas_px": 2.17,
+   "passed": true,
+   "stroke_width_at_1280w_px": 1.12
+  },
+  {
+   "id": "panel_method_holmes",
+   "expected_outline_color": "#973837",
+   "has_fill_background": true,
+   "outline_is_last_child": true,
+   "outline_count": 1,
+   "outline_color_ok": true,
+   "stroke_width_asset": 8.59393,
+   "stroke_width_canvas_px": 2.72,
+   "passed": true,
+   "stroke_width_at_1280w_px": 1.41
+  }
+ ],
+ "passed": true
+}

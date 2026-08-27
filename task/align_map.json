@@ -1,0 +1,20 @@
+{
+ "sx": 0.31629,
+ "sy": 0.31661,
+ "tx": -0.5,
+ "ty": -18.0,
+ "fit": "uniform-refined",
+ "mae": 28.29,
+ "recon_content_bbox": [
+  68,
+  79,
+  7762,
+  3576
+ ],
+ "src_content_bbox": [
+  21,
+  7,
+  2457,
+  1161
+ ]
+}

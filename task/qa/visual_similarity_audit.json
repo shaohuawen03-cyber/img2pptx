@@ -1,0 +1,230 @@
+{
+ "source": {
+  "file": "holmes.png",
+  "size": [
+   2472,
+   1164
+  ]
+ },
+ "render": {
+  "file": "full.svg",
+  "rendered_at": [
+   2472,
+   1164
+  ]
+ },
+ "whole_image_mae": 24.49,
+ "note": "font substitution in sandbox renderer affects text-heavy regions; structure and colors are otherwise compared pixel-exactly",
+ "components": [
+  {
+   "id": "panel_method_holmes",
+   "mae": 22.16,
+   "bbox": [
+    17,
+    3,
+    1772,
+    1116
+   ]
+  },
+  {
+   "id": "panel_query_types",
+   "mae": 28.38,
+   "bbox": [
+    1781,
+    0,
+    2458,
+    299
+   ]
+  },
+  {
+   "id": "panel_opinion_agg",
+   "mae": 35.68,
+   "bbox": [
+    1781,
+    300,
+    2472,
+    727
+   ]
+  },
+  {
+   "id": "panel_fot",
+   "mae": 31.31,
+   "bbox": [
+    1781,
+    735,
+    2472,
+    1117
+   ]
+  },
+  {
+   "id": "panel_calibration",
+   "mae": 28.64,
+   "bbox": [
+    1485,
+    212,
+    1759,
+    737
+   ]
+  },
+  {
+   "id": "panel_partition",
+   "mae": 20.67,
+   "bbox": [
+    1070,
+    213,
+    1500,
+    728
+   ]
+  },
+  {
+   "id": "panel_identification",
+   "mae": 17.79,
+   "bbox": [
+    626,
+    214,
+    1078,
+    727
+   ]
+  },
+  {
+   "id": "panel_threefold",
+   "mae": 30.73,
+   "bbox": [
+    310,
+    209,
+    566,
+    693
+   ]
+  },
+  {
+   "id": "video_strip",
+   "mae": 24.27,
+   "bbox": [
+    34,
+    7,
+    605,
+    175
+   ]
+  },
+  {
+   "id": "dirichlet_frame",
+   "mae": 14.38,
+   "bbox": [
+    489,
+    44,
+    1630,
+    235
+   ]
+  },
+  {
+   "id": "branch_frame",
+   "mae": 12.14,
+   "bbox": [
+    356,
+    42,
+    1176,
+    197
+   ]
+  },
+  {
+   "id": "embeddings_frame",
+   "mae": 17.86,
+   "bbox": [
+    1106,
+    2,
+    1494,
+    215
+   ]
+  },
+  {
+   "id": "evidence_frame",
+   "mae": 22.11,
+   "bbox": [
+    1466,
+    67,
+    1759,
+    216
+   ]
+  },
+  {
+   "id": "branch_clip_pipe",
+   "mae": 30.07,
+   "bbox": [
+    870,
+    831,
+    1177,
+    939
+   ]
+  },
+  {
+   "id": "branch_clip",
+   "mae": 27.99,
+   "bbox": [
+    281,
+    686,
+    1006,
+    938
+   ]
+  },
+  {
+   "id": "dirichlet_clip",
+   "mae": 24.11,
+   "bbox": [
+    492,
+    718,
+    1622,
+    859
+   ]
+  },
+  {
+   "id": "embeddings_clip",
+   "mae": 26.79,
+   "bbox": [
+    1102,
+    735,
+    1544,
+    938
+   ]
+  },
+  {
+   "id": "evidence_clip",
+   "mae": 15.91,
+   "bbox": [
+    1488,
+    722,
+    1760,
+    916
+   ]
+  },
+  {
+   "id": "branch_query",
+   "mae": 29.08,
+   "bbox": [
+    23,
+    969,
+    1261,
+    1121
+   ]
+  },
+  {
+   "id": "query_embeddings",
+   "mae": 29.25,
+   "bbox": [
+    1254,
+    961,
+    1673,
+    1119
+   ]
+  },
+  {
+   "id": "connectors_annotations",
+   "mae": 21.4,
+   "bbox": [
+    25,
+    94,
+    1759,
+    978
+   ]
+  }
+ ]
+}

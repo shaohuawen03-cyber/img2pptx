@@ -1,0 +1,48 @@
+{
+ "checks": [
+  {
+   "check": "canvas_aspect_matches_source",
+   "value": 2.1237113402061856,
+   "expected": 2.1237113402061856,
+   "passed": true
+  },
+  {
+   "check": "right_column_left_edges_aligned",
+   "value": [
+    1787.0129350000002,
+    1787.0129350000002,
+    1787.0129350000002
+   ],
+   "tolerance_px": 3,
+   "passed": true
+  },
+  {
+   "check": "right_column_vertical_stack_gaps",
+   "value": [
+    8.900000000000034,
+    16.399999999999977
+   ],
+   "range": [
+    0,
+    60
+   ],
+   "passed": true
+  },
+  {
+   "check": "midband_panels_top_bottom_aligned",
+   "tops": [
+    257.4507,
+    257.4507,
+    257.609005
+   ],
+   "bottoms": [
+    722.23418,
+    723.1840100000001,
+    723.342315
+   ],
+   "tolerance_px": 12,
+   "passed": true
+  }
+ ],
+ "passed": true
+}

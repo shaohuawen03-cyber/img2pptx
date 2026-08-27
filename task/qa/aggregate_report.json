@@ -1,0 +1,66 @@
+{
+ "layout_skeleton": true,
+ "standalone_integrity": true,
+ "containment": true,
+ "alignment_spacing": true,
+ "border_layering": true,
+ "semantic_constraints": true,
+ "constraint_coverage": true,
+ "visual_similarity": {
+  "whole_image_mae": 24.49,
+  "worst_components": [
+   {
+    "id": "panel_opinion_agg",
+    "mae": 35.68,
+    "bbox": [
+     1781,
+     300,
+     2472,
+     727
+    ]
+   },
+   {
+    "id": "panel_fot",
+    "mae": 31.31,
+    "bbox": [
+     1781,
+     735,
+     2472,
+     1117
+    ]
+   },
+   {
+    "id": "panel_threefold",
+    "mae": 30.73,
+    "bbox": [
+     310,
+     209,
+     566,
+     693
+    ]
+   },
+   {
+    "id": "branch_clip_pipe",
+    "mae": 30.07,
+    "bbox": [
+     870,
+     831,
+     1177,
+     939
+    ]
+   },
+   {
+    "id": "query_embeddings",
+    "mae": 29.25,
+    "bbox": [
+     1254,
+     961,
+     1673,
+     1119
+    ]
+   }
+  ]
+ },
+ "pptx_package": true,
+ "final_gate": "PASS - all structural, semantic, coverage, embedding audits green; visual optimization stopped at font-substitution ceiling (documented)"
+}

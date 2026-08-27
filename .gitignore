@@ -7,3 +7,4 @@ node_modules/
 .env.*
 *.zip
 
+task/prev_recon.png

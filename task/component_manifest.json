@@ -1,0 +1,1136 @@
+{
+ "task": "img2pptx reconstruction of arXiv:2605.06083 Figure (Holmes method)",
+ "normalized_input": {
+  "file": "holmes.png",
+  "width": 2472,
+  "height": 1164,
+  "aspect": 2.1237
+ },
+ "asset_source": "Vector geometry reused from the repository's previous verified reconstruction of this same figure (docs/assets/methodv3-reconstructed.svg); re-mapped via affine (see align_map.json) and re-grouped semantically.",
+ "affine": {
+  "sx": 0.31629,
+  "sy": 0.31661,
+  "tx": -0.5,
+  "ty": -18.0
+ },
+ "default_padding": 8,
+ "outline_stroke_width_px": "1.4-1.8 (scaled from asset space, see notes)",
+ "components": [
+  {
+   "id": "panel_method_holmes",
+   "label": "Holmes framework main panel",
+   "parent": "holmes_method",
+   "bbox": {
+    "x": 21.3,
+    "y": 7.0,
+    "width": 1747.2,
+    "height": 1105.9
+   },
+   "level": "semantic-unit",
+   "export": false,
+   "editable_parts": [
+    "texts",
+    "shapes"
+   ],
+   "representation": "svg-group",
+   "render_strategy": "vector-reconstruction",
+   "semantic_role": "overall framework container",
+   "text_sample": [],
+   "element_counts": {
+    "text": 0,
+    "path": 2,
+    "rect": 0
+   },
+   "source_observations": [],
+   "visual_invariants": [],
+   "negative_constraints": [],
+   "notes": "Outline kept as final child of the group"
+  },
+  {
+   "id": "panel_query_types",
+   "label": "Query identification: precise / polysemous / under-determined",
+   "parent": "holmes_method",
+   "bbox": {
+    "x": 1785.9,
+    "y": -3.8,
+    "width": 668.6,
+    "height": 299.2
+   },
+   "level": "semantic-unit",
+   "export": true,
+   "editable_parts": [
+    "texts",
+    "shapes",
+    "arrows"
+   ],
+   "representation": "svg-group",
+   "render_strategy": "vector-reconstruction",
+   "semantic_role": "query type identification",
+   "text_sample": [
+    "c",
+    "ξ",
+    "u",
+    "S",
+    "p",
+    "Precise",
+    "Queries",
+    "S",
+    "n",
+    "Polysemous",
+    "Queries",
+    "S"
+   ],
+   "element_counts": {
+    "text": 17,
+    "path": 35,
+    "rect": 3
+   },
+   "source_observations": [],
+   "visual_invariants": [],
+   "negative_constraints": [],
+   "notes": "Outline kept as final child of the group"
+  },
+  {
+   "id": "panel_opinion_agg",
+   "label": "(b) Uncertainty guided identification (opinion aggregation)",
+   "parent": "holmes_method",
+   "bbox": {
+    "x": 1785.9,
+    "y": 304.3,
+    "width": 731.2,
+    "height": 418.9
+   },
+   "level": "semantic-unit",
+   "export": true,
+   "editable_parts": [
+    "texts",
+    "shapes",
+    "arrows"
+   ],
+   "representation": "svg-group",
+   "render_strategy": "vector-reconstruction",
+   "semantic_role": "opinion aggregation (b)",
+   "text_sample": [
+    "(b) Uncertainty Guided Identification",
+    "frame",
+    "-",
+    "scale",
+    "u",
+    "f",
+    "b",
+    "2",
+    "f",
+    "b",
+    "3",
+    "f"
+   ],
+   "element_counts": {
+    "text": 72,
+    "path": 45,
+    "rect": 0
+   },
+   "source_observations": [],
+   "visual_invariants": [],
+   "negative_constraints": [],
+   "notes": "Outline kept as final child of the group"
+  },
+  {
+   "id": "panel_fot",
+   "label": "(c) Dynamic co-evidential aggregator (FOT)",
+   "parent": "holmes_method",
+   "bbox": {
+    "x": 1785.9,
+    "y": 739.6,
+    "width": 683.6,
+    "height": 374.2
+   },
+   "level": "semantic-unit",
+   "export": true,
+   "editable_parts": [
+    "texts",
+    "shapes",
+    "arrows"
+   ],
+   "representation": "svg-group",
+   "render_strategy": "vector-reconstruction",
+   "semantic_role": "flexible optimal transport (c)",
+   "text_sample": [
+    "(c) Dynamic Co",
+    "-",
+    "Evidential Aggregator",
+    "q",
+    "1",
+    "... q",
+    "M",
+    "q",
+    "dustbin",
+    "c",
+    "1",
+    "⋮"
+   ],
+   "element_counts": {
+    "text": 22,
+    "path": 29,
+    "rect": 26
+   },
+   "source_observations": [],
+   "visual_invariants": [],
+   "negative_constraints": [],
+   "notes": "Outline kept as final child of the group"
+  },
+  {
+   "id": "panel_calibration",
+   "label": "Calibration panel (100/010/001 table)",
+   "parent": "holmes_method",
+   "bbox": {
+    "x": 1489.5,
+    "y": 216.0,
+    "width": 266.2,
+    "height": 517.2
+   },
+   "level": "semantic-unit",
+   "export": true,
+   "editable_parts": [
+    "texts",
+    "shapes",
+    "arrows"
+   ],
+   "representation": "svg-group",
+   "render_strategy": "vector-reconstruction",
+   "semantic_role": "query-adaptive calibration",
+   "text_sample": [
+    "Query Label",
+    "Calibration",
+    "S",
+    "o",
+    "p",
+    "S",
+    "o",
+    "n",
+    "S",
+    "o",
+    "u",
+    "1"
+   ],
+   "element_counts": {
+    "text": 38,
+    "path": 16,
+    "rect": 27
+   },
+   "source_observations": [],
+   "visual_invariants": [],
+   "negative_constraints": [],
+   "notes": "Outline kept as final child of the group"
+  },
+  {
+   "id": "panel_partition",
+   "label": "Partition fusion panel {S_p, S_n, S_u}",
+   "parent": "holmes_method",
+   "bbox": {
+    "x": 1074.9,
+    "y": 217.2,
+    "width": 421.6,
+    "height": 506.9
+   },
+   "level": "semantic-unit",
+   "export": true,
+   "editable_parts": [
+    "texts",
+    "shapes",
+    "arrows"
+   ],
+   "representation": "svg-group",
+   "render_strategy": "vector-reconstruction",
+   "semantic_role": "partition fusion",
+   "text_sample": [
+    "Uncertainty",
+    "-",
+    "Dominant",
+    "Partition Fusion",
+    "{S",
+    "f",
+    "p",
+    ", S",
+    "f",
+    "n",
+    ", S",
+    "f"
+   ],
+   "element_counts": {
+    "text": 51,
+    "path": 15,
+    "rect": 40
+   },
+   "source_observations": [],
+   "visual_invariants": [],
+   "negative_constraints": [],
+   "notes": "Outline kept as final child of the group"
+  },
+  {
+   "id": "panel_identification",
+   "label": "Uncertainty guided identification panel",
+   "parent": "holmes_method",
+   "bbox": {
+    "x": 630.2,
+    "y": 218.2,
+    "width": 444.7,
+    "height": 505.0
+   },
+   "level": "semantic-unit",
+   "export": true,
+   "editable_parts": [
+    "texts",
+    "shapes",
+    "arrows"
+   ],
+   "representation": "svg-group",
+   "render_strategy": "vector-reconstruction",
+   "semantic_role": "uncertainty guided identification",
+   "text_sample": [
+    "Uncertainty Guided",
+    "Identification",
+    "C",
+    "u",
+    "ξ",
+    "S",
+    "p",
+    "S",
+    "n",
+    "S",
+    "u"
+   ],
+   "element_counts": {
+    "text": 11,
+    "path": 46,
+    "rect": 0
+   },
+   "source_observations": [],
+   "visual_invariants": [],
+   "negative_constraints": [],
+   "notes": "Outline kept as final child of the group"
+  },
+  {
+   "id": "panel_threefold",
+   "label": "Three-fold uncertainty principle (u, C, xi)",
+   "parent": "holmes_method",
+   "bbox": {
+    "x": 314.8,
+    "y": 213.3,
+    "width": 248.0,
+    "height": 476.0
+   },
+   "level": "semantic-unit",
+   "export": true,
+   "editable_parts": [
+    "texts",
+    "shapes",
+    "arrows"
+   ],
+   "representation": "svg-group",
+   "render_strategy": "vector-reconstruction",
+   "semantic_role": "three-fold uncertainty principle",
+   "text_sample": [
+    "u",
+    "Epistemic",
+    "Uncertainty",
+    "C",
+    "Label",
+    "Consistency",
+    "ξ",
+    "Aleatoric",
+    "Uncertainty"
+   ],
+   "element_counts": {
+    "text": 9,
+    "path": 12,
+    "rect": 3
+   },
+   "source_observations": [],
+   "visual_invariants": [],
+   "negative_constraints": [],
+   "notes": "Outline kept as final child of the group"
+  },
+  {
+   "id": "video_strip",
+   "label": "Untrimmed video filmstrip (dense frames)",
+   "parent": "holmes_method",
+   "bbox": {
+    "x": 38.5,
+    "y": 11.1,
+    "width": 563.1,
+    "height": 160.2
+   },
+   "level": "semantic-unit",
+   "export": true,
+   "editable_parts": [
+    "texts",
+    "shapes",
+    "arrows"
+   ],
+   "representation": "svg-group",
+   "render_strategy": "vector-reconstruction",
+   "semantic_role": "input video frames",
+   "text_sample": [
+    "Video",
+    "Frame",
+    "-",
+    "scale Branch"
+   ],
+   "element_counts": {
+    "text": 4,
+    "path": 24,
+    "rect": 2
+   },
+   "source_observations": [],
+   "visual_invariants": [],
+   "negative_constraints": [],
+   "notes": ""
+  },
+  {
+   "id": "dirichlet_frame",
+   "label": "Frame-level Dirichlet evidential modeling",
+   "parent": "holmes_method",
+   "bbox": {
+    "x": 493.2,
+    "y": 48.5,
+    "width": 1133.1,
+    "height": 182.9
+   },
+   "level": "semantic-unit",
+   "export": true,
+   "editable_parts": [
+    "texts",
+    "shapes",
+    "arrows"
+   ],
+   "representation": "svg-group",
+   "render_strategy": "vector-reconstruction",
+   "semantic_role": "inter-video Dirichlet modeling (frame)",
+   "text_sample": [
+    "max",
+    "Evidence Extractor",
+    "α",
+    "1",
+    "f",
+    ", α",
+    "2",
+    "f",
+    ", α",
+    "3",
+    "f",
+    ", α"
+   ],
+   "element_counts": {
+    "text": 19,
+    "path": 7,
+    "rect": 6
+   },
+   "source_observations": [],
+   "visual_invariants": [],
+   "negative_constraints": [],
+   "notes": ""
+  },
+  {
+   "id": "branch_frame",
+   "label": "Frame-scale branch (dense sampling)",
+   "parent": "holmes_method",
+   "bbox": {
+    "x": 360.7,
+    "y": 46.3,
+    "width": 811.9,
+    "height": 147.2
+   },
+   "level": "semantic-unit",
+   "export": true,
+   "editable_parts": [
+    "texts",
+    "shapes",
+    "arrows"
+   ],
+   "representation": "svg-group",
+   "render_strategy": "vector-reconstruction",
+   "semantic_role": "frame-level encoder branch",
+   "text_sample": [
+    "Dense",
+    "Sampling",
+    "FC",
+    "Frame",
+    "Encoder",
+    "e",
+    "f"
+   ],
+   "element_counts": {
+    "text": 7,
+    "path": 9,
+    "rect": 0
+   },
+   "source_observations": [],
+   "visual_invariants": [],
+   "negative_constraints": [],
+   "notes": ""
+  },
+  {
+   "id": "embeddings_frame",
+   "label": "Frame embeddings V_f container",
+   "parent": "holmes_method",
+   "bbox": {
+    "x": 1110.6,
+    "y": 6.1,
+    "width": 379.5,
+    "height": 205.5
+   },
+   "level": "semantic-unit",
+   "export": true,
+   "editable_parts": [
+    "texts",
+    "shapes",
+    "arrows"
+   ],
+   "representation": "svg-group",
+   "render_strategy": "vector-reconstruction",
+   "semantic_role": "frame embeddings output",
+   "text_sample": [
+    "Frame Embeddings:",
+    "V",
+    "f"
+   ],
+   "element_counts": {
+    "text": 3,
+    "path": 7,
+    "rect": 6
+   },
+   "source_observations": [],
+   "visual_invariants": [],
+   "negative_constraints": [],
+   "notes": ""
+  },
+  {
+   "id": "evidence_frame",
+   "label": "Frame evidence extractor (max / S_f)",
+   "parent": "holmes_method",
+   "bbox": {
+    "x": 1470.7,
+    "y": 71.3,
+    "width": 285.0,
+    "height": 141.3
+   },
+   "level": "semantic-unit",
+   "export": true,
+   "editable_parts": [
+    "texts",
+    "shapes",
+    "arrows"
+   ],
+   "representation": "svg-group",
+   "render_strategy": "vector-reconstruction",
+   "semantic_role": "evidence extraction from V_f",
+   "text_sample": [
+    "L",
+    "inter",
+    "S",
+    "f"
+   ],
+   "element_counts": {
+    "text": 4,
+    "path": 10,
+    "rect": 0
+   },
+   "source_observations": [],
+   "visual_invariants": [],
+   "negative_constraints": [],
+   "notes": ""
+  },
+  {
+   "id": "branch_clip_pipe",
+   "label": "Clip encoder pipeline",
+   "parent": "holmes_method",
+   "bbox": {
+    "x": 874.0,
+    "y": 835.3,
+    "width": 299.8,
+    "height": 100.0
+   },
+   "level": "semantic-unit",
+   "export": true,
+   "editable_parts": [
+    "texts",
+    "shapes",
+    "arrows"
+   ],
+   "representation": "svg-group",
+   "render_strategy": "vector-reconstruction",
+   "semantic_role": "clip encoder pipeline",
+   "text_sample": [
+    "FC",
+    "Clip",
+    "Encoder"
+   ],
+   "element_counts": {
+    "text": 3,
+    "path": 6,
+    "rect": 0
+   },
+   "source_observations": [],
+   "visual_invariants": [],
+   "negative_constraints": [],
+   "notes": ""
+  },
+  {
+   "id": "branch_clip",
+   "label": "Clip-scale branch (sparse sampling)",
+   "parent": "holmes_method",
+   "bbox": {
+    "x": 285.6,
+    "y": 690.6,
+    "width": 716.6,
+    "height": 243.8
+   },
+   "level": "semantic-unit",
+   "export": true,
+   "editable_parts": [
+    "texts",
+    "shapes",
+    "arrows"
+   ],
+   "representation": "svg-group",
+   "render_strategy": "vector-reconstruction",
+   "semantic_role": "clip-level encoder branch",
+   "text_sample": [
+    "Clip",
+    "-",
+    "scale Branch",
+    "Sparse",
+    "Sampling",
+    "α",
+    "1",
+    "c",
+    ", α",
+    "2",
+    "c",
+    ", α"
+   ],
+   "element_counts": {
+    "text": 18,
+    "path": 15,
+    "rect": 4
+   },
+   "source_observations": [],
+   "visual_invariants": [],
+   "negative_constraints": [],
+   "notes": ""
+  },
+  {
+   "id": "dirichlet_clip",
+   "label": "Clip-level Dirichlet evidential modeling",
+   "parent": "holmes_method",
+   "bbox": {
+    "x": 496.5,
+    "y": 722.2,
+    "width": 1122.2,
+    "height": 132.9
+   },
+   "level": "semantic-unit",
+   "export": true,
+   "editable_parts": [
+    "texts",
+    "shapes",
+    "arrows"
+   ],
+   "representation": "svg-group",
+   "render_strategy": "vector-reconstruction",
+   "semantic_role": "inter-video Dirichlet modeling (clip)",
+   "text_sample": [
+    "max",
+    "Evidence Extractor",
+    "K",
+    "c",
+    "e",
+    "c",
+    "Dirichlet",
+    "distribution"
+   ],
+   "element_counts": {
+    "text": 8,
+    "path": 2,
+    "rect": 0
+   },
+   "source_observations": [],
+   "visual_invariants": [],
+   "negative_constraints": [],
+   "notes": ""
+  },
+  {
+   "id": "embeddings_clip",
+   "label": "Clip embeddings V_c container",
+   "parent": "holmes_method",
+   "bbox": {
+    "x": 1106.2,
+    "y": 739.6,
+    "width": 434.1,
+    "height": 194.7
+   },
+   "level": "semantic-unit",
+   "export": true,
+   "editable_parts": [
+    "texts",
+    "shapes",
+    "arrows"
+   ],
+   "representation": "svg-group",
+   "render_strategy": "vector-reconstruction",
+   "semantic_role": "clip embeddings output",
+   "text_sample": [
+    "Clip Embeddings:",
+    "V",
+    "c"
+   ],
+   "element_counts": {
+    "text": 3,
+    "path": 8,
+    "rect": 4
+   },
+   "source_observations": [],
+   "visual_invariants": [],
+   "negative_constraints": [],
+   "notes": ""
+  },
+  {
+   "id": "evidence_clip",
+   "label": "Clip evidence extractor (max / S_c)",
+   "parent": "holmes_method",
+   "bbox": {
+    "x": 1492.4,
+    "y": 726.5,
+    "width": 263.8,
+    "height": 186.0
+   },
+   "level": "semantic-unit",
+   "export": true,
+   "editable_parts": [
+    "texts",
+    "shapes",
+    "arrows"
+   ],
+   "representation": "svg-group",
+   "render_strategy": "vector-reconstruction",
+   "semantic_role": "evidence extraction from V_c",
+   "text_sample": [
+    "L",
+    "inter",
+    "S",
+    "c"
+   ],
+   "element_counts": {
+    "text": 4,
+    "path": 11,
+    "rect": 0
+   },
+   "source_observations": [],
+   "visual_invariants": [],
+   "negative_constraints": [],
+   "notes": ""
+  },
+  {
+   "id": "branch_query",
+   "label": "Query branch (text queries -> RoBERTa)",
+   "parent": "holmes_method",
+   "bbox": {
+    "x": 27.6,
+    "y": 973.0,
+    "width": 1229.7,
+    "height": 144.0
+   },
+   "level": "semantic-unit",
+   "export": true,
+   "editable_parts": [
+    "texts",
+    "shapes",
+    "arrows"
+   ],
+   "representation": "svg-group",
+   "render_strategy": "vector-reconstruction",
+   "semantic_role": "text query encoding",
+   "text_sample": [
+    "The girl bends",
+    "down and ties the",
+    "ballerina shoes.",
+    "RoBERTa",
+    "FC",
+    "Transformer",
+    "Attention",
+    "Query Branch"
+   ],
+   "element_counts": {
+    "text": 8,
+    "path": 11,
+    "rect": 6
+   },
+   "source_observations": [],
+   "visual_invariants": [],
+   "negative_constraints": [],
+   "notes": ""
+  },
+  {
+   "id": "query_embeddings",
+   "label": "Query embeddings container",
+   "parent": "holmes_method",
+   "bbox": {
+    "x": 1258.0,
+    "y": 965.7,
+    "width": 411.5,
+    "height": 149.3
+   },
+   "level": "semantic-unit",
+   "export": true,
+   "editable_parts": [
+    "texts",
+    "shapes",
+    "arrows"
+   ],
+   "representation": "svg-group",
+   "render_strategy": "vector-reconstruction",
+   "semantic_role": "query embeddings output",
+   "text_sample": [
+    "Query Embeddings:",
+    "q",
+    "L",
+    "base"
+   ],
+   "element_counts": {
+    "text": 4,
+    "path": 11,
+    "rect": 3
+   },
+   "source_observations": [],
+   "visual_invariants": [],
+   "negative_constraints": [],
+   "notes": ""
+  },
+  {
+   "id": "connectors_annotations",
+   "label": "Connectors and annotations",
+   "parent": "holmes_method",
+   "bbox": {
+    "x": 29.9,
+    "y": 98.7,
+    "width": 1725.8,
+    "height": 876.1
+   },
+   "level": "semantic-unit",
+   "export": true,
+   "editable_parts": [
+    "texts",
+    "shapes",
+    "arrows"
+   ],
+   "representation": "svg-group",
+   "render_strategy": "vector-reconstruction",
+   "semantic_role": "arrows and labels",
+   "text_sample": [
+    "CNN",
+    "Text Queries"
+   ],
+   "element_counts": {
+    "text": 2,
+    "path": 19,
+    "rect": 10
+   },
+   "source_observations": [],
+   "visual_invariants": [],
+   "negative_constraints": [],
+   "notes": ""
+  }
+ ],
+ "raster_crops": [
+  {
+   "id": "photo_video_frame_1",
+   "representation": "raster-image",
+   "parent": "video_strip",
+   "bbox": {
+    "x": 140,
+    "y": 28,
+    "width": 126,
+    "height": 124
+   },
+   "reason": "photographic video-frame stills in the source filmstrip; vectorization would materially reduce fidelity",
+   "original_source": "holmes.png region [140, 28, 266, 152]",
+   "replaceable_by_vector": "possible-later",
+   "png_bytes": 21267
+  },
+  {
+   "id": "photo_video_frame_2",
+   "representation": "raster-image",
+   "parent": "video_strip",
+   "bbox": {
+    "x": 564,
+    "y": 42,
+    "width": 400,
+    "height": 112
+   },
+   "reason": "photographic video-frame stills in the source filmstrip; vectorization would materially reduce fidelity",
+   "original_source": "holmes.png region [564, 42, 964, 154]",
+   "replaceable_by_vector": "possible-later",
+   "png_bytes": 3631
+  },
+  {
+   "id": "photo_video_frame_3",
+   "representation": "raster-image",
+   "parent": "video_strip",
+   "bbox": {
+    "x": 966,
+    "y": 42,
+    "width": 240,
+    "height": 112
+   },
+   "reason": "photographic video-frame stills in the source filmstrip; vectorization would materially reduce fidelity",
+   "original_source": "holmes.png region [966, 42, 1206, 154]",
+   "replaceable_by_vector": "possible-later",
+   "png_bytes": 6539
+  },
+  {
+   "id": "photo_video_frame_4",
+   "representation": "raster-image",
+   "parent": "video_strip",
+   "bbox": {
+    "x": 1204,
+    "y": 42,
+    "width": 290,
+    "height": 112
+   },
+   "reason": "photographic video-frame stills in the source filmstrip; vectorization would materially reduce fidelity",
+   "original_source": "holmes.png region [1204, 42, 1494, 154]",
+   "replaceable_by_vector": "possible-later",
+   "png_bytes": 1785
+  }
+ ],
+ "modules": {
+  "panel_query_types": {
+   "bbox_src": [
+    1785.9,
+    -3.8,
+    2454.5,
+    295.4
+   ],
+   "file": "modules/panel_query_types.svg"
+  },
+  "panel_opinion_agg": {
+   "bbox_src": [
+    1785.9,
+    304.3,
+    2517.2,
+    723.2
+   ],
+   "file": "modules/panel_opinion_agg.svg"
+  },
+  "panel_fot": {
+   "bbox_src": [
+    1785.9,
+    739.6,
+    2469.5,
+    1113.9
+   ],
+   "file": "modules/panel_fot.svg"
+  },
+  "panel_calibration": {
+   "bbox_src": [
+    1489.5,
+    216.0,
+    1755.7,
+    733.2
+   ],
+   "file": "modules/panel_calibration.svg"
+  },
+  "panel_partition": {
+   "bbox_src": [
+    1074.9,
+    217.2,
+    1496.5,
+    724.1
+   ],
+   "file": "modules/panel_partition.svg"
+  },
+  "panel_identification": {
+   "bbox_src": [
+    630.2,
+    218.2,
+    1074.9,
+    723.2
+   ],
+   "file": "modules/panel_identification.svg"
+  },
+  "panel_threefold": {
+   "bbox_src": [
+    314.8,
+    213.3,
+    562.8,
+    689.3
+   ],
+   "file": "modules/panel_threefold.svg"
+  },
+  "video_strip": {
+   "bbox_src": [
+    38.5,
+    11.1,
+    601.7,
+    171.3
+   ],
+   "file": "modules/video_strip.svg"
+  },
+  "dirichlet_frame": {
+   "bbox_src": [
+    493.2,
+    48.5,
+    1626.3,
+    231.4
+   ],
+   "file": "modules/dirichlet_frame.svg"
+  },
+  "branch_frame": {
+   "bbox_src": [
+    360.7,
+    46.3,
+    1172.6,
+    193.5
+   ],
+   "file": "modules/branch_frame.svg"
+  },
+  "embeddings_frame": {
+   "bbox_src": [
+    1110.6,
+    6.1,
+    1490.2,
+    211.5
+   ],
+   "file": "modules/embeddings_frame.svg"
+  },
+  "evidence_frame": {
+   "bbox_src": [
+    1470.7,
+    71.3,
+    1755.7,
+    212.6
+   ],
+   "file": "modules/evidence_frame.svg"
+  },
+  "branch_clip_pipe": {
+   "bbox_src": [
+    874.0,
+    835.3,
+    1173.9,
+    935.3
+   ],
+   "file": "modules/branch_clip_pipe.svg"
+  },
+  "branch_clip": {
+   "bbox_src": [
+    285.6,
+    690.6,
+    1002.2,
+    934.4
+   ],
+   "file": "modules/branch_clip.svg"
+  },
+  "dirichlet_clip": {
+   "bbox_src": [
+    496.5,
+    722.2,
+    1618.7,
+    855.1
+   ],
+   "file": "modules/dirichlet_clip.svg"
+  },
+  "embeddings_clip": {
+   "bbox_src": [
+    1106.2,
+    739.6,
+    1540.3,
+    934.4
+   ],
+   "file": "modules/embeddings_clip.svg"
+  },
+  "evidence_clip": {
+   "bbox_src": [
+    1492.4,
+    726.5,
+    1756.2,
+    912.5
+   ],
+   "file": "modules/evidence_clip.svg"
+  },
+  "branch_query": {
+   "bbox_src": [
+    27.6,
+    973.0,
+    1257.4,
+    1117.0
+   ],
+   "file": "modules/branch_query.svg"
+  },
+  "query_embeddings": {
+   "bbox_src": [
+    1258.0,
+    965.7,
+    1669.5,
+    1115.0
+   ],
+   "file": "modules/query_embeddings.svg"
+  },
+  "connectors_annotations": {
+   "bbox_src": [
+    29.9,
+    98.7,
+    1755.7,
+    974.7
+   ],
+   "file": "modules/connectors_annotations.svg"
+  }
+ },
+ "visual_optimization": {
+  "baseline_first_valid_render_mae": 24.36,
+  "final_mae": 24.49,
+  "soft_target": "10% relative MAE improvement",
+  "target_reached": false,
+  "stopping_reason": "Remaining error is dominated by glyph-shape differences caused by font substitution in the offline sandbox renderer (source uses Cambria Math/Arial/Comic Sans MS; only metric-compatible clones Caladea/Carlito and DejaVu are available). Structural fixes exhausted: photo raster crops (MAE 0.0 in those regions), z-order preservation, and text rendering repairs already reduced missing-ink from 10.3% to 7.5%.",
+  "attempts": [
+   {
+    "attempt": 1,
+    "change": "embed 4 photographic filmstrip crops as data-URI rasters",
+    "mae": 24.36,
+    "accepted": true,
+    "note": "crop regions MAE 0.0"
+   },
+   {
+    "attempt": 2,
+    "change": "restore asset document z-order inside groups (fixes texts occluded by container fills); emit framework container first",
+    "mae": 24.49,
+    "accepted": true,
+    "note": "missing-ink 10.3%->7.5%, extra-ink visible because substituted glyphs differ in width; net MAE ~flat but semantic completeness improved"
+   },
+   {
+    "attempt": 3,
+    "change": "font mapping experiments: Arial->Arimo (24.70), Cambria->DejaVu Serif (25.01)",
+    "mae": null,
+    "accepted": false,
+    "note": "both rolled back; Caladea/Carlito mapping is the best available"
+   }
+  ],
+  "metrics_note": "MAE measured at 2472x1164 against holmes.png with resvg + Caladea/Carlito/DejaVu; PowerPoint on the user machine will resolve the original font families."
+ },
+ "pptx": {
+  "file": "final.pptx",
+  "slide_size_in": [
+   13.333,
+   6.279
+  ],
+  "aspect": 2.1237,
+  "svg_primary": true,
+  "png_fallback": true,
+  "embedded_svg_sha256": "6f49943dab8c56b41847e449eef8dc969b08f3439d9540c78d12c75655614892",
+  "conversion_readiness": "verified structurally (svgBlip extension, rels, content-type, nested groups, 307 editable <text>)",
+  "fidelity_after_powerpoint_conversion": "not verified - no PowerPoint in the sandbox; use Convert to Shape / Ungroup and inspect locally"
+ },
+ "human_review_summary": {
+  "photo_crops": "4 filmstrip crops taken pixel-exact from the source; content accuracy needs human eyes (cannot be verified programmatically)",
+  "fonts": "PowerPoint will substitute fonts per the family lists; Cambria Math/Arial/Comic Sans MS are expected on Windows systems"
+ }
+}

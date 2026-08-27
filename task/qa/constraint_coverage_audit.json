@@ -1,0 +1,160 @@
+{
+ "hard_constraints": [
+  {
+   "constraint": "calibration_rows_sum_to_one",
+   "audit_executed": true,
+   "evidence": {
+    "values_found": [
+     0.01,
+     0.02,
+     0.05,
+     0.06,
+     0.07,
+     0.11,
+     0.87,
+     0.88,
+     0.93
+    ],
+    "row_sums": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "passed": true
+  },
+  {
+   "constraint": "query_types_order_precise_polysemous_underdetermined",
+   "audit_executed": true,
+   "evidence": {
+    "found": [
+     [
+      "Precise",
+      7102.14,
+      229.0
+     ],
+     [
+      "Polysemous",
+      7061.12,
+      510.0
+     ],
+     [
+      "Under",
+      7054.46,
+      814.0
+     ]
+    ]
+   },
+   "passed": true
+  },
+  {
+   "constraint": "threefold_principle_labels",
+   "audit_executed": true,
+   "evidence": {
+    "found": [
+     "Aleatoric",
+     "Consistency",
+     "Epistemic"
+    ]
+   },
+   "passed": true
+  },
+  {
+   "constraint": "evidence_capsules_preserved",
+   "audit_executed": true,
+   "evidence": {
+    "count_now": 18,
+    "count_asset": 18,
+    "by_group": {
+     "dirichlet_frame": 3,
+     "embeddings_frame": 3,
+     "branch_clip": 4,
+     "embeddings_clip": 4,
+     "connectors_annotations": 4
+    }
+   },
+   "passed": true
+  },
+  {
+   "constraint": "fot_dustbin_elements",
+   "audit_executed": true,
+   "evidence": {
+    "labels": [
+     "FOT",
+     "dustbin",
+     "dustbin bucket"
+    ]
+   },
+   "passed": true
+  },
+  {
+   "constraint": "panel_b_c_labels",
+   "audit_executed": true,
+   "evidence": {
+    "b": [
+     "(b) Uncertainty Guided Identification"
+    ],
+    "c": [
+     "(c) Dynamic Co"
+    ]
+   },
+   "passed": true
+  },
+  {
+   "constraint": "loss_terms_L_inter_x2_L_base_x1",
+   "audit_executed": true,
+   "evidence": {
+    "L_inter_count": 2,
+    "L_base_count": 1
+   },
+   "passed": true
+  },
+  {
+   "constraint": "all_asset_elements_preserved",
+   "audit_executed": true,
+   "evidence": {
+    "texts": [
+     307,
+     307
+    ],
+    "paths": [
+     340,
+     340
+    ],
+    "rects": [
+     140,
+     140
+    ],
+    "note": "asset page-background rect replaced by canvas background"
+   },
+   "passed": true
+  },
+  {
+   "constraint": "flow_arrows_preserved",
+   "audit_executed": true,
+   "evidence": {
+    "stroke_arrows": 2,
+    "arrowheads": 2
+   },
+   "passed": true
+  },
+  {
+   "constraint": "no_invented_or_moved_text",
+   "audit_executed": true,
+   "evidence": {
+    "mismatches": [],
+    "count": 307
+   },
+   "passed": true
+  },
+  {
+   "constraint": "photo_crops_embedded_minimal",
+   "audit_executed": true,
+   "evidence": {
+    "n_images": 4
+   },
+   "passed": true
+  }
+ ],
+ "passed": true
+}

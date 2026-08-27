@@ -1,0 +1,205 @@
+{
+ "modules": [
+  {
+   "id": "panel_query_types",
+   "render_size": [
+    685,
+    315
+   ],
+   "content_margin_px": 8,
+   "passed": true,
+   "external_refs": false
+  },
+  {
+   "id": "panel_opinion_agg",
+   "render_size": [
+    747,
+    435
+   ],
+   "content_margin_px": 7,
+   "passed": true,
+   "external_refs": false
+  },
+  {
+   "id": "panel_fot",
+   "render_size": [
+    700,
+    390
+   ],
+   "content_margin_px": 8,
+   "passed": true,
+   "external_refs": false
+  },
+  {
+   "id": "panel_calibration",
+   "render_size": [
+    282,
+    533
+   ],
+   "content_margin_px": 7,
+   "passed": true,
+   "external_refs": false
+  },
+  {
+   "id": "panel_partition",
+   "render_size": [
+    438,
+    523
+   ],
+   "content_margin_px": 7,
+   "passed": true,
+   "external_refs": false
+  },
+  {
+   "id": "panel_identification",
+   "render_size": [
+    461,
+    521
+   ],
+   "content_margin_px": 8,
+   "passed": true,
+   "external_refs": false
+  },
+  {
+   "id": "panel_threefold",
+   "render_size": [
+    264,
+    492
+   ],
+   "content_margin_px": 7,
+   "passed": true,
+   "external_refs": false
+  },
+  {
+   "id": "video_strip",
+   "render_size": [
+    579,
+    176
+   ],
+   "content_margin_px": 8,
+   "passed": true,
+   "external_refs": false
+  },
+  {
+   "id": "dirichlet_frame",
+   "render_size": [
+    1149,
+    199
+   ],
+   "content_margin_px": 7,
+   "passed": true,
+   "external_refs": false
+  },
+  {
+   "id": "branch_frame",
+   "render_size": [
+    828,
+    163
+   ],
+   "content_margin_px": 6,
+   "passed": true,
+   "external_refs": false
+  },
+  {
+   "id": "embeddings_frame",
+   "render_size": [
+    396,
+    221
+   ],
+   "content_margin_px": 9,
+   "passed": true,
+   "external_refs": false
+  },
+  {
+   "id": "evidence_frame",
+   "render_size": [
+    301,
+    157
+   ],
+   "content_margin_px": 6,
+   "passed": true,
+   "external_refs": false
+  },
+  {
+   "id": "branch_clip_pipe",
+   "render_size": [
+    316,
+    116
+   ],
+   "content_margin_px": 6,
+   "passed": true,
+   "external_refs": false
+  },
+  {
+   "id": "branch_clip",
+   "render_size": [
+    733,
+    260
+   ],
+   "content_margin_px": 6,
+   "passed": true,
+   "external_refs": false
+  },
+  {
+   "id": "dirichlet_clip",
+   "render_size": [
+    1138,
+    149
+   ],
+   "content_margin_px": 8,
+   "passed": true,
+   "external_refs": false
+  },
+  {
+   "id": "embeddings_clip",
+   "render_size": [
+    450,
+    211
+   ],
+   "content_margin_px": 8,
+   "passed": true,
+   "external_refs": false
+  },
+  {
+   "id": "evidence_clip",
+   "render_size": [
+    280,
+    202
+   ],
+   "content_margin_px": 6,
+   "passed": true,
+   "external_refs": false
+  },
+  {
+   "id": "branch_query",
+   "render_size": [
+    1246,
+    160
+   ],
+   "content_margin_px": 7,
+   "passed": true,
+   "external_refs": false
+  },
+  {
+   "id": "query_embeddings",
+   "render_size": [
+    428,
+    165
+   ],
+   "content_margin_px": 8,
+   "passed": true,
+   "external_refs": false
+  },
+  {
+   "id": "connectors_annotations",
+   "render_size": [
+    1742,
+    892
+   ],
+   "content_margin_px": 6,
+   "passed": true,
+   "external_refs": false
+  }
+ ],
+ "passed": true
+}

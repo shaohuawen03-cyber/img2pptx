@@ -1,0 +1,14 @@
+{
+ "checks": [
+  {
+   "check": "all_components_inside_canvas_6px_tol",
+   "passed": true
+  },
+  {
+   "check": "no_panel_panel_intrusion",
+   "violations": [],
+   "passed": true
+  }
+ ],
+ "passed": true
+}
