@@ -123,7 +123,7 @@ def _trace_mask_to_d(mask2x):
     """
     bm = potrace.Bitmap(~(mask2x > 127))
     try:
-        pl = bm.trace(turdsize=16, alphamax=1.0, opttolerance=0.4)
+        pl = bm.trace(turdsize=24, alphamax=1.2, opttolerance=0.3)
     except Exception:
         return None
     parts = []
@@ -143,11 +143,13 @@ def _trace_mask_to_d(mask2x):
 
 
 def vectorize_module(name, x, y, w, h, text_boxes):
-    """Region -> inpaint text -> k-means quantize -> per-color potrace paths.
+    """Region-merge vectorization (clean poster-style shapes).
 
-    Returns (svg_group_body, stats). Coordinates: traced at 2x, mapped back
-    via transform="translate(x,y) scale(0.5)".
+    inpaint text -> bilateral denoise -> SLIC superpixels -> iterative
+    closest-color region merging -> per-region median color -> potrace
+    bezier (2.5x, smoothed, 1px dilation against white seams).
     """
+    from skimage.segmentation import slic
     region = bgr[max(0, y):y + h, max(0, x):x + w].copy()
     mask = np.zeros(region.shape[:2], np.uint8)
     for t in text_boxes:
@@ -160,36 +162,69 @@ def vectorize_module(name, x, y, w, h, text_boxes):
     if mask.any():
         region = cv2.inpaint(region, mask, 4, cv2.INPAINT_TELEA)
     rgb = cv2.cvtColor(region, cv2.COLOR_BGR2RGB)
-    med = cv2.medianBlur(rgb, 5)
-    K = 14 if w * h > 80000 else 10
-    data = med.reshape(-1, 3).astype(np.float32)
-    crit = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 20, 1.0)
-    _, label, center = cv2.kmeans(data, K, None, crit, 3, cv2.KMEANS_PP_CENTERS)
-    label_img = label.reshape(med.shape[:2])
-    fracs = [(int((label_img == i).sum()), i) for i in range(K)]
-    fracs.sort(reverse=True)
-    total = med.shape[0] * med.shape[1]
+    den = cv2.bilateralFilter(rgb, 9, 45, 7)
+    n_sp = max(80, (w * h) // 500)
+    labels = slic(den, n_segments=n_sp, compactness=14,
+                  start_label=0, channel_axis=2)
+
+    def neighbors(lab):
+        nb = set()
+        for aa, bb in ((lab[:-1, :], lab[1:, :]), (lab[:, :-1], lab[:, 1:])):
+            m = aa != bb
+            for i, j in zip(aa[m], bb[m]):
+                nb.add((min(i, j), max(i, j)))
+        return nb
+
+    merge_th, min_area = 10, 100
+    while True:
+        ids = np.unique(labels)
+        if len(ids) <= 5:
+            break
+        means = {i: den[labels == i].mean(0) for i in ids}
+        best = None
+        for a_, b_ in neighbors(labels):
+            d = float(np.abs(means[a_] - means[b_]).mean())
+            if best is None or d < best[0]:
+                best = (d, a_, b_)
+        if best is None or best[0] > merge_th:
+            break
+        labels[labels == best[2]] = best[1]
+    while True:
+        ids = np.unique(labels)
+        areas = {i: int((labels == i).sum()) for i in ids}
+        means = {i: den[labels == i].mean(0) for i in ids}
+        nb = neighbors(labels)
+        hit = None
+        for i in ids:
+            if areas[i] < min_area:
+                cand = [(float(np.abs(means[i] - means[j]).mean()), j)
+                        for a_, b_ in nb for j in (a_, b_)
+                        if i in (a_, b_) and j != i]
+                if cand:
+                    hit = (i, min(cand)[1])
+                    break
+        if hit is None:
+            break
+        labels[labels == hit[0]] = hit[1]
+
     body, stats = [], []
-    for area, i in fracs:
-        frac = area / total
-        if frac > 0.985 or frac < 0.0005:
-            continue
-        if float(center[i].mean()) > 241:   # near-white: page bg is white
-            continue
-        m = (label_img == i).astype(np.uint8) * 255
-        m = cv2.morphologyEx(m, cv2.MORPH_OPEN, np.ones((3, 3), np.uint8))
-        m = cv2.morphologyEx(m, cv2.MORPH_CLOSE, np.ones((5, 5), np.uint8))
-        m2 = cv2.resize(m, None, fx=2, fy=2, interpolation=cv2.INTER_NEAREST)
-        m2 = cv2.medianBlur(m2, 3)
+    up = 2.5
+    for i in sorted(np.unique(labels), key=lambda i: -int((labels == i).sum())):
+        m = labels == i
+        col = "#%02X%02X%02X" % tuple(int(v) for v in np.median(rgb[m], axis=0))
+        m2 = cv2.resize(m.astype(np.uint8) * 255, None, fx=up, fy=up,
+                        interpolation=cv2.INTER_NEAREST)
+        m2 = cv2.dilate(m2, np.ones((3, 3), np.uint8))
+        m2 = cv2.GaussianBlur(m2, (0, 0), 1.1)
+        m2 = (m2 > 127).astype(np.uint8) * 255
         d = _trace_mask_to_d(m2)
         if not d:
             continue
-        col = "#%02X%02X%02X" % tuple(int(round(v)) for v in center[i])
         body.append(f'<path fill="{col}" fill-rule="evenodd" d="{d}"/>')
-        stats.append({"color": col, "frac": round(frac, 4)})
+        stats.append({"color": col, "area": int(m.sum())})
     inner = "".join(body)
     group_body = (f'<g id="{name}_shapes" '
-                  f'transform="translate({x} {y}) scale(0.5)">{inner}</g>')
+                  f'transform="translate({x} {y}) scale({1/up})">{inner}</g>')
     return group_body, {"n_colors": len(stats), "colors": stats}
 
 

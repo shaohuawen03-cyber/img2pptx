@@ -40,7 +40,7 @@
    "export": true,
    "notes": "",
    "representation": "svg-shapes",
-   "n_colors": 13
+   "n_colors": 95
   },
   {
    "id": "card_bloodstream",
@@ -56,7 +56,7 @@
    "export": true,
    "notes": "",
    "representation": "svg-shapes",
-   "n_colors": 13
+   "n_colors": 79
   },
   {
    "id": "card_ab_structure",
@@ -72,7 +72,7 @@
    "export": true,
    "notes": "",
    "representation": "svg-shapes",
-   "n_colors": 13
+   "n_colors": 60
   },
   {
    "id": "motif_gingipains",
@@ -88,7 +88,7 @@
    "export": true,
    "notes": "",
    "representation": "svg-shapes",
-   "n_colors": 7
+   "n_colors": 16
   },
   {
    "id": "motif_omv_dots",
@@ -104,7 +104,7 @@
    "export": true,
    "notes": "",
    "representation": "svg-shapes",
-   "n_colors": 8
+   "n_colors": 17
   },
   {
    "id": "motif_brainhead",
@@ -120,7 +120,7 @@
    "export": true,
    "notes": "",
    "representation": "svg-shapes",
-   "n_colors": 9
+   "n_colors": 7
   },
   {
    "id": "motif_pale_corridor",
@@ -136,7 +136,7 @@
    "export": true,
    "notes": "",
    "representation": "svg-shapes",
-   "n_colors": 9
+   "n_colors": 17
   },
   {
    "id": "motif_neuron",
@@ -152,7 +152,7 @@
    "export": true,
    "notes": "",
    "representation": "svg-shapes",
-   "n_colors": 5
+   "n_colors": 14
   },
   {
    "id": "motif_plaques",
@@ -168,7 +168,7 @@
    "export": true,
    "notes": "",
    "representation": "svg-shapes",
-   "n_colors": 8
+   "n_colors": 10
   },
   {
    "id": "motif_tau",
@@ -184,7 +184,7 @@
    "export": true,
    "notes": "",
    "representation": "svg-shapes",
-   "n_colors": 3
+   "n_colors": 6
   },
   {
    "id": "motif_tau_frag",
@@ -200,7 +200,7 @@
    "export": true,
    "notes": "",
    "representation": "svg-shapes",
-   "n_colors": 5
+   "n_colors": 12
   },
   {
    "id": "motif_blue_icon",
@@ -216,7 +216,7 @@
    "export": true,
    "notes": "",
    "representation": "svg-shapes",
-   "n_colors": 4
+   "n_colors": 13
   },
   {
    "id": "motif_icon_geo",
@@ -232,7 +232,7 @@
    "export": true,
    "notes": "",
    "representation": "svg-shapes",
-   "n_colors": 7
+   "n_colors": 11
   },
   {
    "id": "motif_heatmap",
@@ -248,7 +248,7 @@
    "export": true,
    "notes": "",
    "representation": "svg-shapes",
-   "n_colors": 9
+   "n_colors": 38
   },
   {
    "id": "motif_docking",
@@ -264,7 +264,7 @@
    "export": true,
    "notes": "",
    "representation": "svg-shapes",
-   "n_colors": 8
+   "n_colors": 26
   },
   {
    "id": "motif_md_model",
@@ -296,7 +296,7 @@
    "export": true,
    "notes": "",
    "representation": "svg-shapes",
-   "n_colors": 8
+   "n_colors": 27
   },
   {
    "id": "flow_connectors",
@@ -344,7 +344,7 @@
    ]
   },
   {
-   "id": "text_74091551",
+   "id": "text_94774246",
    "label": "label: 'P. gingivalis'",
    "level": "atomic-element",
    "bbox": [
@@ -362,7 +362,7 @@
    ]
   },
   {
-   "id": "text_70154235",
+   "id": "text_24204449",
    "label": "label: 'neuron'",
    "level": "atomic-element",
    "bbox": [
@@ -380,7 +380,7 @@
    ]
   },
   {
-   "id": "text_90325774",
+   "id": "text_45608802",
    "label": "label: 'amyloid-β'",
    "level": "atomic-element",
    "bbox": [
@@ -398,7 +398,7 @@
    ]
   },
   {
-   "id": "text_51816039",
+   "id": "text_93143707",
    "label": "label: 'plaques'",
    "level": "atomic-element",
    "bbox": [
@@ -416,7 +416,7 @@
    ]
   },
   {
-   "id": "text_53414601",
+   "id": "text_54366413",
    "label": "label: 'BBB'",
    "level": "atomic-element",
    "bbox": [
@@ -434,7 +434,7 @@
    ]
   },
   {
-   "id": "text_42651740",
+   "id": "text_56411983",
    "label": "label: 'brain'",
    "level": "atomic-element",
    "bbox": [
@@ -452,7 +452,7 @@
    ]
   },
   {
-   "id": "text_87166533",
+   "id": "text_61374597",
    "label": "label: 'bloodstream'",
    "level": "atomic-element",
    "bbox": [
@@ -470,7 +470,7 @@
    ]
   },
   {
-   "id": "text_15271035",
+   "id": "text_62868918",
    "label": "label: 'tau'",
    "level": "atomic-element",
    "bbox": [
@@ -488,7 +488,7 @@
    ]
   },
   {
-   "id": "text_99821179",
+   "id": "text_72405461",
    "label": "label: 'gingipains/OMVs'",
    "level": "atomic-element",
    "bbox": [
@@ -506,7 +506,7 @@
    ]
   },
   {
-   "id": "text_29010416",
+   "id": "text_90704716",
    "label": "label: 'fragments'",
    "level": "atomic-element",
    "bbox": [
@@ -524,7 +524,7 @@
    ]
   },
   {
-   "id": "text_63224307",
+   "id": "text_78574718",
    "label": "label: 'gingipains'",
    "level": "atomic-element",
    "bbox": [
@@ -542,7 +542,7 @@
    ]
   },
   {
-   "id": "text_85773141",
+   "id": "text_88362194",
    "label": "label: 'AChE-Aβ nucleation'",
    "level": "atomic-element",
    "bbox": [
@@ -560,7 +560,7 @@
    ]
   },
   {
-   "id": "text_35561416",
+   "id": "text_83692577",
    "label": "label: 'PAS'",
    "level": "atomic-element",
    "bbox": [
@@ -578,7 +578,7 @@
    ]
   },
   {
-   "id": "text_25138876",
+   "id": "text_49938847",
    "label": "label: 'Aβ peptide'",
    "level": "atomic-element",
    "bbox": [
@@ -596,7 +596,7 @@
    ]
   },
   {
-   "id": "text_94189818",
+   "id": "text_2937910",
    "label": "label: 'RgpA'",
    "level": "atomic-element",
    "bbox": [
@@ -614,7 +614,7 @@
    ]
   },
   {
-   "id": "text_13244266",
+   "id": "text_7180844",
    "label": "label: 'RgpB'",
    "level": "atomic-element",
    "bbox": [
@@ -632,7 +632,7 @@
    ]
   },
   {
-   "id": "text_34045280",
+   "id": "text_84450683",
    "label": "label: 'Kgp'",
    "level": "atomic-element",
    "bbox": [
@@ -650,7 +650,7 @@
    ]
   },
   {
-   "id": "text_36275930",
+   "id": "text_50544617",
    "label": "label: 'OMVs'",
    "level": "atomic-element",
    "bbox": [
@@ -668,7 +668,7 @@
    ]
   },
   {
-   "id": "text_63933877",
+   "id": "text_69893334",
    "label": "label: 'surface patch'",
    "level": "atomic-element",
    "bbox": [
@@ -686,7 +686,7 @@
    ]
   },
   {
-   "id": "text_61973093",
+   "id": "text_14276641",
    "label": "label: 'residues344-361'",
    "level": "atomic-element",
    "bbox": [
@@ -704,7 +704,7 @@
    ]
   },
   {
-   "id": "text_13925436",
+   "id": "text_77678898",
    "label": "label: '1 microsecond'",
    "level": "atomic-element",
    "bbox": [
@@ -722,7 +722,7 @@
    ]
   },
   {
-   "id": "text_54062149",
+   "id": "text_77182304",
    "label": "label: 'transcriptomics'",
    "level": "atomic-element",
    "bbox": [
@@ -740,7 +740,7 @@
    ]
   },
   {
-   "id": "text_77713222",
+   "id": "text_6271474",
    "label": "label: 'molecular docking'",
    "level": "atomic-element",
    "bbox": [
@@ -758,7 +758,7 @@
    ]
   },
   {
-   "id": "text_98937235",
+   "id": "text_33133539",
    "label": "label: 'GEO'",
    "level": "atomic-element",
    "bbox": [
@@ -776,7 +776,7 @@
    ]
   },
   {
-   "id": "text_78089199",
+   "id": "text_36514950",
    "label": "label: 'MD simulation'",
    "level": "atomic-element",
    "bbox": [
@@ -794,7 +794,7 @@
    ]
   },
   {
-   "id": "text_98937235",
+   "id": "text_33133539",
    "label": "label: 'GEO'",
    "level": "atomic-element",
    "bbox": [
@@ -812,7 +812,7 @@
    ]
   },
   {
-   "id": "text_83425214",
+   "id": "text_54448255",
    "label": "label: '1μs'",
    "level": "atomic-element",
    "bbox": [
@@ -856,7 +856,7 @@
     336,
     644
    ],
-   "n_colors": 13,
+   "n_colors": 95,
    "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
@@ -867,7 +867,7 @@
     292,
     502
    ],
-   "n_colors": 13,
+   "n_colors": 79,
    "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
@@ -878,7 +878,7 @@
     348,
     302
    ],
-   "n_colors": 13,
+   "n_colors": 60,
    "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
@@ -889,7 +889,7 @@
     236,
     266
    ],
-   "n_colors": 7,
+   "n_colors": 16,
    "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
@@ -900,7 +900,7 @@
     188,
     126
    ],
-   "n_colors": 8,
+   "n_colors": 17,
    "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
@@ -911,7 +911,7 @@
     262,
     252
    ],
-   "n_colors": 9,
+   "n_colors": 7,
    "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
@@ -922,7 +922,7 @@
     192,
     377
    ],
-   "n_colors": 9,
+   "n_colors": 17,
    "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
@@ -933,7 +933,7 @@
     212,
     102
    ],
-   "n_colors": 5,
+   "n_colors": 14,
    "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
@@ -944,7 +944,7 @@
     177,
     207
    ],
-   "n_colors": 8,
+   "n_colors": 10,
    "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
@@ -955,7 +955,7 @@
     127,
     97
    ],
-   "n_colors": 3,
+   "n_colors": 6,
    "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
@@ -966,7 +966,7 @@
     147,
     127
    ],
-   "n_colors": 5,
+   "n_colors": 12,
    "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
@@ -977,7 +977,7 @@
     94,
     94
    ],
-   "n_colors": 4,
+   "n_colors": 13,
    "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
@@ -988,7 +988,7 @@
     94,
     132
    ],
-   "n_colors": 7,
+   "n_colors": 11,
    "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
@@ -999,7 +999,7 @@
     234,
     182
    ],
-   "n_colors": 9,
+   "n_colors": 38,
    "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
@@ -1010,7 +1010,7 @@
     239,
     162
    ],
-   "n_colors": 8,
+   "n_colors": 26,
    "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
@@ -1032,7 +1032,7 @@
     264,
     226
    ],
-   "n_colors": 8,
+   "n_colors": 27,
    "render_strategy": "kmeans-quantize + potrace bezier trace"
   }
  ],
@@ -1043,41 +1043,5 @@
    "reason": "source OCR garbled ('(srl) aw', conf 0.72); inferred from '1 microsecond MD simulation' context",
    "status": "needs-human-review"
   }
- ],
- "representation_note": "ALL elements are vector: illustrations vectorized via k-means color quantization + potrace bezier tracing (no <image> elements). Replaced the earlier minimal raster-crop strategy at user request; MAE 5.96 -> 13.65 is the measured cost of full vectorization (quantization).",
- "visual_optimization": {
-  "history": [
-   {
-    "stage": "raster-crop composition",
-    "mae": 5.96,
-    "note": "pixel-exact crops; rejected by user (wanted full vector)"
-   },
-   {
-    "stage": "full vectorization K=14/10 turd16 tol0.4",
-    "mae": 13.65,
-    "accepted": true
-   },
-   {
-    "stage": "K=18/12 turd10 tol0.25",
-    "mae": 14.32,
-    "accepted": false,
-    "note": "finer quantization fragmented shapes; rolled back"
-   }
-  ],
-  "final_mae": 13.65,
-  "soft_target_reached": false,
-  "stopping_reason": "quantization floor of blind color-cluster vectorization; text layer separately limited by font substitution"
- },
- "pptx": {
-  "file": "final.pptx",
-  "svg_primary": true,
-  "png_fallback": true,
-  "embedded_svg_sha256": "4073c795db1dac982dd52ef2d0f1de06eb0480d82e9ba590bf2a696a5dff5089",
-  "conversion_readiness": "verified structurally (svgBlip, rels, content types)",
-  "fidelity_after_powerpoint_conversion": "not verified - no PowerPoint in sandbox"
- },
- "human_review_summary": {
-  "chart_x_title": "source OCR garbled; rendered 'Time (μs)' from MD context",
-  "vectorized_illustrations": "color-quantized bezier approximations of the source cartoons; silhouettes faithful (IoU 0.88-0.97 per color), fine texture simplified"
- }
+ ]
 }

@@ -6,7 +6,7 @@
   },
   {
    "check": "embedded_svg_matches_full_svg_by_hash",
-   "sha256": "4073c795db1dac982dd52ef2d0f1de06eb0480d82e9ba590bf2a696a5dff5089",
+   "sha256": "2860c37978bd525e7c43b25d0a58027feb35bf9f985f3ced2a6f14caaecd7876",
    "passed": true
   },
   {
