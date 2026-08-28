@@ -1,0 +1,1065 @@
+{
+ "task": "img2pptx blind reconstruction of fig1_graphical_abstract.png",
+ "normalized_input": {
+  "file": "fig1.png",
+  "width": 1619,
+  "height": 971,
+  "aspect": 1.6674
+ },
+ "components": [
+  {
+   "id": "methods_strip_frame",
+   "label": "Methods strip frame (3 cells)",
+   "level": "semantic-unit",
+   "bbox": [
+    15,
+    687,
+    1605,
+    941
+   ],
+   "semantic_role": "containers: transcriptomics | docking | MD simulation",
+   "export": true,
+   "notes": "",
+   "representation": "svg-shapes",
+   "source_observations": [
+    "dark navy border rgb(28,64,101) at y=687, x=15",
+    "pale dividers at x=451, x=840"
+   ]
+  },
+  {
+   "id": "card_pg_bacterium",
+   "label": "card pg bacterium",
+   "level": "semantic-unit",
+   "bbox": [
+    14,
+    58,
+    350,
+    702
+   ],
+   "semantic_role": "illustration module",
+   "export": true,
+   "notes": "",
+   "representation": "raster-image"
+  },
+  {
+   "id": "card_bloodstream",
+   "label": "card bloodstream",
+   "level": "semantic-unit",
+   "bbox": [
+    595,
+    158,
+    887,
+    660
+   ],
+   "semantic_role": "illustration module",
+   "export": true,
+   "notes": "",
+   "representation": "raster-image"
+  },
+  {
+   "id": "card_ab_structure",
+   "label": "card ab structure",
+   "level": "semantic-unit",
+   "bbox": [
+    1258,
+    370,
+    1606,
+    672
+   ],
+   "semantic_role": "illustration module",
+   "export": true,
+   "notes": "",
+   "representation": "raster-image"
+  },
+  {
+   "id": "motif_gingipains",
+   "label": "motif gingipains",
+   "level": "combination-submodule",
+   "bbox": [
+    300,
+    226,
+    536,
+    492
+   ],
+   "semantic_role": "illustration module",
+   "export": true,
+   "notes": "",
+   "representation": "raster-image"
+  },
+  {
+   "id": "motif_omv_dots",
+   "label": "motif omv dots",
+   "level": "combination-submodule",
+   "bbox": [
+    336,
+    476,
+    524,
+    602
+   ],
+   "semantic_role": "illustration module",
+   "export": true,
+   "notes": "",
+   "representation": "raster-image"
+  },
+  {
+   "id": "motif_brainhead",
+   "label": "motif brainhead",
+   "level": "combination-submodule",
+   "bbox": [
+    868,
+    128,
+    1130,
+    380
+   ],
+   "semantic_role": "illustration module",
+   "export": true,
+   "notes": "",
+   "representation": "raster-image"
+  },
+  {
+   "id": "motif_pale_corridor",
+   "label": "motif pale corridor",
+   "level": "combination-submodule",
+   "bbox": [
+    1038,
+    193,
+    1230,
+    570
+   ],
+   "semantic_role": "illustration module",
+   "export": true,
+   "notes": "",
+   "representation": "raster-image"
+  },
+  {
+   "id": "motif_neuron",
+   "label": "motif neuron",
+   "level": "combination-submodule",
+   "bbox": [
+    1383,
+    23,
+    1595,
+    125
+   ],
+   "semantic_role": "illustration module",
+   "export": true,
+   "notes": "",
+   "representation": "raster-image"
+  },
+  {
+   "id": "motif_plaques",
+   "label": "motif plaques",
+   "level": "combination-submodule",
+   "bbox": [
+    1433,
+    83,
+    1610,
+    290
+   ],
+   "semantic_role": "illustration module",
+   "export": true,
+   "notes": "",
+   "representation": "raster-image"
+  },
+  {
+   "id": "motif_tau",
+   "label": "motif tau",
+   "level": "combination-submodule",
+   "bbox": [
+    1463,
+    193,
+    1590,
+    290
+   ],
+   "semantic_role": "illustration module",
+   "export": true,
+   "notes": "",
+   "representation": "raster-image"
+  },
+  {
+   "id": "motif_tau_frag",
+   "label": "motif tau frag",
+   "level": "combination-submodule",
+   "bbox": [
+    1463,
+    293,
+    1610,
+    420
+   ],
+   "semantic_role": "illustration module",
+   "export": true,
+   "notes": "",
+   "representation": "raster-image"
+  },
+  {
+   "id": "motif_blue_icon",
+   "label": "motif blue icon",
+   "level": "combination-submodule",
+   "bbox": [
+    1323,
+    138,
+    1417,
+    232
+   ],
+   "semantic_role": "illustration module",
+   "export": true,
+   "notes": "",
+   "representation": "raster-image"
+  },
+  {
+   "id": "motif_icon_geo",
+   "label": "motif icon geo",
+   "level": "combination-submodule",
+   "bbox": [
+    48,
+    726,
+    142,
+    858
+   ],
+   "semantic_role": "illustration module",
+   "export": true,
+   "notes": "",
+   "representation": "raster-image"
+  },
+  {
+   "id": "motif_heatmap",
+   "label": "motif heatmap",
+   "level": "combination-submodule",
+   "bbox": [
+    148,
+    733,
+    382,
+    915
+   ],
+   "semantic_role": "illustration module",
+   "export": true,
+   "notes": "",
+   "representation": "raster-image"
+  },
+  {
+   "id": "motif_docking",
+   "label": "motif docking",
+   "level": "combination-submodule",
+   "bbox": [
+    523,
+    743,
+    762,
+    905
+   ],
+   "semantic_role": "illustration module",
+   "export": true,
+   "notes": "",
+   "representation": "raster-image"
+  },
+  {
+   "id": "motif_md_model",
+   "label": "motif md model",
+   "level": "combination-submodule",
+   "bbox": [
+    863,
+    748,
+    977,
+    890
+   ],
+   "semantic_role": "illustration module",
+   "export": true,
+   "notes": "",
+   "representation": "raster-image"
+  },
+  {
+   "id": "motif_protein_br",
+   "label": "motif protein br",
+   "level": "combination-submodule",
+   "bbox": [
+    1343,
+    693,
+    1607,
+    919
+   ],
+   "semantic_role": "illustration module",
+   "export": true,
+   "notes": "",
+   "representation": "raster-image"
+  },
+  {
+   "id": "flow_connectors",
+   "label": "Flow connectors (traced arrows)",
+   "level": "semantic-unit",
+   "bbox": [
+    58,
+    39,
+    1463,
+    916
+   ],
+   "semantic_role": "causal flow: bacterium -> bloodstream -> BBB -> brain",
+   "export": true,
+   "notes": "",
+   "representation": "svg-paths",
+   "n_arrows": 27,
+   "source_observations": [
+    "no straight Hough lines: arrows are curved",
+    "traced via medial axis of residual ink"
+   ]
+  },
+  {
+   "id": "chart_rmsd",
+   "label": "RMSD line chart (1 microsecond MD)",
+   "level": "semantic-unit",
+   "bbox": [
+    985,
+    750,
+    1360,
+    945
+   ],
+   "semantic_role": "MD convergence evidence",
+   "export": true,
+   "notes": "",
+   "representation": "svg-chart",
+   "source_observations": [
+    "L-shaped axes at x=1056, y=879.5",
+    "x ticks 0.0-1.0 step 0.2; y ticks 0.0-0.4 step 0.1",
+    "single navy trace ~7px thick, x 1057-1322, y 790-874"
+   ],
+   "visual_invariants": [
+    "ticks strictly ascending",
+    "curve stays inside axes",
+    "curve single-valued in x"
+   ]
+  },
+  {
+   "id": "text_21231308",
+   "label": "label: 'P. gingivalis'",
+   "level": "atomic-element",
+   "bbox": [
+    62,
+    25,
+    232,
+    63
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.997"
+   ]
+  },
+  {
+   "id": "text_34482653",
+   "label": "label: 'neuron'",
+   "level": "atomic-element",
+   "bbox": [
+    1386,
+    53,
+    1461,
+    74
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.999"
+   ]
+  },
+  {
+   "id": "text_33020972",
+   "label": "label: 'amyloid-β'",
+   "level": "atomic-element",
+   "bbox": [
+    1476,
+    74,
+    1562,
+    98
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.999"
+   ]
+  },
+  {
+   "id": "text_26211686",
+   "label": "label: 'plaques'",
+   "level": "atomic-element",
+   "bbox": [
+    1486,
+    98,
+    1555,
+    119
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.996"
+   ]
+  },
+  {
+   "id": "text_7908031",
+   "label": "label: 'BBB'",
+   "level": "atomic-element",
+   "bbox": [
+    790,
+    119,
+    836,
+    145
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 1.0"
+   ]
+  },
+  {
+   "id": "text_39626263",
+   "label": "label: 'brain'",
+   "level": "atomic-element",
+   "bbox": [
+    1046,
+    119,
+    1099,
+    146
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.998"
+   ]
+  },
+  {
+   "id": "text_15452990",
+   "label": "label: 'bloodstream'",
+   "level": "atomic-element",
+   "bbox": [
+    610,
+    120,
+    736,
+    145
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.998"
+   ]
+  },
+  {
+   "id": "text_92021934",
+   "label": "label: 'tau'",
+   "level": "atomic-element",
+   "bbox": [
+    1501,
+    217,
+    1530,
+    238
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.997"
+   ]
+  },
+  {
+   "id": "text_61326689",
+   "label": "label: 'gingipains/OMVs'",
+   "level": "atomic-element",
+   "bbox": [
+    330,
+    239,
+    504,
+    268
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.995"
+   ]
+  },
+  {
+   "id": "text_8554757",
+   "label": "label: 'fragments'",
+   "level": "atomic-element",
+   "bbox": [
+    1472,
+    240,
+    1557,
+    261
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.998"
+   ]
+  },
+  {
+   "id": "text_44360869",
+   "label": "label: 'gingipains'",
+   "level": "atomic-element",
+   "bbox": [
+    370,
+    294,
+    457,
+    321
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.999"
+   ]
+  },
+  {
+   "id": "text_291263",
+   "label": "label: 'AChE-Aβ nucleation'",
+   "level": "atomic-element",
+   "bbox": [
+    1307,
+    335,
+    1515,
+    364
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.974"
+   ]
+  },
+  {
+   "id": "text_97121958",
+   "label": "label: 'PAS'",
+   "level": "atomic-element",
+   "bbox": [
+    1241,
+    372,
+    1280,
+    394
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.998"
+   ]
+  },
+  {
+   "id": "text_42650295",
+   "label": "label: 'Aβ peptide'",
+   "level": "atomic-element",
+   "bbox": [
+    1493,
+    383,
+    1591,
+    413
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.991"
+   ]
+  },
+  {
+   "id": "text_95365560",
+   "label": "label: 'RgpA'",
+   "level": "atomic-element",
+   "bbox": [
+    328,
+    390,
+    378,
+    413
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.992"
+   ]
+  },
+  {
+   "id": "text_60236709",
+   "label": "label: 'RgpB'",
+   "level": "atomic-element",
+   "bbox": [
+    390,
+    390,
+    440,
+    412
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.997"
+   ]
+  },
+  {
+   "id": "text_89626021",
+   "label": "label: 'Kgp'",
+   "level": "atomic-element",
+   "bbox": [
+    457,
+    390,
+    494,
+    413
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.996"
+   ]
+  },
+  {
+   "id": "text_39223610",
+   "label": "label: 'OMVs'",
+   "level": "atomic-element",
+   "bbox": [
+    386,
+    452,
+    440,
+    474
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.969"
+   ]
+  },
+  {
+   "id": "text_40230545",
+   "label": "label: 'surface patch'",
+   "level": "atomic-element",
+   "bbox": [
+    1221,
+    563,
+    1335,
+    587
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.973"
+   ]
+  },
+  {
+   "id": "text_45513192",
+   "label": "label: 'residues344-361'",
+   "level": "atomic-element",
+   "bbox": [
+    1207,
+    585,
+    1350,
+    609
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.985"
+   ]
+  },
+  {
+   "id": "text_96385246",
+   "label": "label: '1 microsecond'",
+   "level": "atomic-element",
+   "bbox": [
+    934,
+    704,
+    1082,
+    727
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.972"
+   ]
+  },
+  {
+   "id": "text_74879975",
+   "label": "label: 'transcriptomics'",
+   "level": "atomic-element",
+   "bbox": [
+    155,
+    705,
+    313,
+    729
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 1.0"
+   ]
+  },
+  {
+   "id": "text_5296960",
+   "label": "label: 'molecular docking'",
+   "level": "atomic-element",
+   "bbox": [
+    560,
+    708,
+    746,
+    739
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.994"
+   ]
+  },
+  {
+   "id": "text_94043608",
+   "label": "label: 'GEO'",
+   "level": "atomic-element",
+   "bbox": [
+    209,
+    727,
+    259,
+    753
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.998"
+   ]
+  },
+  {
+   "id": "text_98700451",
+   "label": "label: 'MD simulation'",
+   "level": "atomic-element",
+   "bbox": [
+    935,
+    727,
+    1081,
+    753
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.982"
+   ]
+  },
+  {
+   "id": "text_94043608",
+   "label": "label: 'GEO'",
+   "level": "atomic-element",
+   "bbox": [
+    76,
+    803,
+    133,
+    832
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.995"
+   ]
+  },
+  {
+   "id": "text_59960965",
+   "label": "label: '1μs'",
+   "level": "atomic-element",
+   "bbox": [
+    900,
+    815,
+    951,
+    845
+   ],
+   "semantic_role": "editable text",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "source_observations": [
+    "OCR conf 0.911"
+   ]
+  },
+  {
+   "id": "labels",
+   "label": "All text labels (OCR-recovered)",
+   "level": "semantic-unit",
+   "bbox": [
+    0,
+    0,
+    1619,
+    971
+   ],
+   "semantic_role": "editable text layer",
+   "export": false,
+   "notes": "",
+   "representation": "svg-text",
+   "n_texts": 27
+  }
+ ],
+ "raster_crops": [
+  {
+   "id": "card_pg_bacterium",
+   "bbox": [
+    14,
+    58,
+    336,
+    644
+   ],
+   "png_bytes": 315954,
+   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
+   "replaceable_by_vector": "needs-human-redraw"
+  },
+  {
+   "id": "card_bloodstream",
+   "bbox": [
+    595,
+    158,
+    292,
+    502
+   ],
+   "png_bytes": 194098,
+   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
+   "replaceable_by_vector": "needs-human-redraw"
+  },
+  {
+   "id": "card_ab_structure",
+   "bbox": [
+    1258,
+    370,
+    348,
+    302
+   ],
+   "png_bytes": 129662,
+   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
+   "replaceable_by_vector": "needs-human-redraw"
+  },
+  {
+   "id": "motif_gingipains",
+   "bbox": [
+    300,
+    226,
+    236,
+    266
+   ],
+   "png_bytes": 43379,
+   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
+   "replaceable_by_vector": "needs-human-redraw"
+  },
+  {
+   "id": "motif_omv_dots",
+   "bbox": [
+    336,
+    476,
+    188,
+    126
+   ],
+   "png_bytes": 34768,
+   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
+   "replaceable_by_vector": "needs-human-redraw"
+  },
+  {
+   "id": "motif_brainhead",
+   "bbox": [
+    868,
+    128,
+    262,
+    252
+   ],
+   "png_bytes": 67960,
+   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
+   "replaceable_by_vector": "needs-human-redraw"
+  },
+  {
+   "id": "motif_pale_corridor",
+   "bbox": [
+    1038,
+    193,
+    192,
+    377
+   ],
+   "png_bytes": 90210,
+   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
+   "replaceable_by_vector": "needs-human-redraw"
+  },
+  {
+   "id": "motif_neuron",
+   "bbox": [
+    1383,
+    23,
+    212,
+    102
+   ],
+   "png_bytes": 13855,
+   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
+   "replaceable_by_vector": "needs-human-redraw"
+  },
+  {
+   "id": "motif_plaques",
+   "bbox": [
+    1433,
+    83,
+    177,
+    207
+   ],
+   "png_bytes": 32568,
+   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
+   "replaceable_by_vector": "needs-human-redraw"
+  },
+  {
+   "id": "motif_tau",
+   "bbox": [
+    1463,
+    193,
+    127,
+    97
+   ],
+   "png_bytes": 6631,
+   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
+   "replaceable_by_vector": "needs-human-redraw"
+  },
+  {
+   "id": "motif_tau_frag",
+   "bbox": [
+    1463,
+    293,
+    147,
+    127
+   ],
+   "png_bytes": 9483,
+   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
+   "replaceable_by_vector": "needs-human-redraw"
+  },
+  {
+   "id": "motif_blue_icon",
+   "bbox": [
+    1323,
+    138,
+    94,
+    94
+   ],
+   "png_bytes": 11352,
+   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
+   "replaceable_by_vector": "needs-human-redraw"
+  },
+  {
+   "id": "motif_icon_geo",
+   "bbox": [
+    48,
+    726,
+    94,
+    132
+   ],
+   "png_bytes": 10293,
+   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
+   "replaceable_by_vector": "needs-human-redraw"
+  },
+  {
+   "id": "motif_heatmap",
+   "bbox": [
+    148,
+    733,
+    234,
+    182
+   ],
+   "png_bytes": 42045,
+   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
+   "replaceable_by_vector": "needs-human-redraw"
+  },
+  {
+   "id": "motif_docking",
+   "bbox": [
+    523,
+    743,
+    239,
+    162
+   ],
+   "png_bytes": 39688,
+   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
+   "replaceable_by_vector": "needs-human-redraw"
+  },
+  {
+   "id": "motif_md_model",
+   "bbox": [
+    863,
+    748,
+    114,
+    142
+   ],
+   "png_bytes": 17365,
+   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
+   "replaceable_by_vector": "needs-human-redraw"
+  },
+  {
+   "id": "motif_protein_br",
+   "bbox": [
+    1343,
+    693,
+    264,
+    226
+   ],
+   "png_bytes": 75359,
+   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
+   "replaceable_by_vector": "needs-human-redraw"
+  }
+ ],
+ "low_confidence_items": [
+  {
+   "item": "chart x-axis title",
+   "rendered": "Time (μs)",
+   "reason": "source OCR garbled ('(srl) aw', conf 0.72); inferred from '1 microsecond MD simulation' context",
+   "status": "needs-human-review"
+  }
+ ],
+ "visual_optimization": {
+  "baseline_mae": 5.03,
+  "final_mae": 5.0,
+  "metric_note": "metric-compatible Carlito (Arial metrics) used for the text layer; completeness preferred over raw MAE",
+  "soft_target_reached": false,
+  "stopping_reason": "remaining error is glyph substitution; PowerPoint resolves real Arial from the same family list"
+ },
+ "pptx": {
+  "file": "final.pptx",
+  "svg_primary": true,
+  "png_fallback": true,
+  "embedded_svg_sha256": "238f20a0a2972769af8e134210dbae65cb593a26aee61538ddca434943a60679",
+  "conversion_readiness": "verified structurally",
+  "fidelity_after_powerpoint_conversion": "not verified - no PowerPoint in sandbox"
+ },
+ "human_review_summary": {
+  "chart_x_title": "source OCR garbled; rendered 'Time (μs)' from MD context",
+  "raster_cards": "biological illustrations preserved as pixel-exact inpainted crops"
+ }
+}

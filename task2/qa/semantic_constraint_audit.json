@@ -1,0 +1,124 @@
+{
+ "constraints": [
+  {
+   "id": "ocr_roundtrip",
+   "description": "OCR of the render re-detects >=70% of source strings (font substitution tolerance)",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "hits": 32,
+    "total": 38,
+    "rate": 0.842
+   }
+  },
+  {
+   "id": "curve_single_valued_inside_axes",
+   "description": "RMSD curve is single-valued in x and stays within the y-axis box",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "n_pts": 90,
+    "y_range": [
+     792.0,
+     872.0
+    ],
+    "x_range": [
+     1056.0,
+     1323.0
+    ]
+   }
+  },
+  {
+   "id": "curve_values_within_plotted_range",
+   "description": "Curve values within [0, 0.45] nm",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "min_nm": 0.028,
+    "max_nm": 0.323
+   }
+  },
+  {
+   "id": "curve_navy_color",
+   "description": "Curve uses the source navy color",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "stroke": "#003078"
+   }
+  },
+  {
+   "id": "chart_tick_labels_complete",
+   "description": "Tick labels 0.0-1.0 (x, step .2) and 0.0-0.4 (y, step .1) all present",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "found": [
+     "0.0",
+     "0.1",
+     "0.2",
+     "0.3",
+     "0.4",
+     "0.6",
+     "0.8"
+    ]
+   }
+  },
+  {
+   "id": "frame_navy_stroke",
+   "description": "Methods frame uses detected navy stroke",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "stroke": "#1C4065"
+   }
+  },
+  {
+   "id": "flow_connectors_traced",
+   "description": "At least 20 connector strokes traced from residual ink",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "n_paths": 27
+   }
+  },
+  {
+   "id": "species_name_italic",
+   "description": "P. gingivalis rendered in italic (nomenclature)",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "style": "italic"
+   }
+  },
+  {
+   "id": "text_layer_present",
+   "description": "Editable text layer with >=27 labels",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "n_texts": 40
+   }
+  },
+  {
+   "id": "crops_self_contained",
+   "description": "All raster crops are inline data URIs",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "n_images": 17
+   }
+  }
+ ],
+ "passed": true,
+ "human_review": [
+  {
+   "item": "chart x-axis title (OCR garbled; rendered as 'Time (\u03bcs)')",
+   "status": "needs-human-review"
+  },
+  {
+   "item": "illustration content of raster cards (cannot verify blind)",
+   "status": "needs-human-review"
+  }
+ ]
+}

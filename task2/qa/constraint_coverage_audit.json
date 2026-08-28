@@ -1,0 +1,104 @@
+{
+ "hard_constraints": [
+  {
+   "constraint": "ocr_roundtrip",
+   "audit_executed": true,
+   "passed": true,
+   "evidence": {
+    "hits": 32,
+    "total": 38,
+    "rate": 0.842
+   }
+  },
+  {
+   "constraint": "curve_single_valued_inside_axes",
+   "audit_executed": true,
+   "passed": true,
+   "evidence": {
+    "n_pts": 90,
+    "y_range": [
+     792.0,
+     872.0
+    ],
+    "x_range": [
+     1056.0,
+     1323.0
+    ]
+   }
+  },
+  {
+   "constraint": "curve_values_within_plotted_range",
+   "audit_executed": true,
+   "passed": true,
+   "evidence": {
+    "min_nm": 0.028,
+    "max_nm": 0.323
+   }
+  },
+  {
+   "constraint": "curve_navy_color",
+   "audit_executed": true,
+   "passed": true,
+   "evidence": {
+    "stroke": "#003078"
+   }
+  },
+  {
+   "constraint": "chart_tick_labels_complete",
+   "audit_executed": true,
+   "passed": true,
+   "evidence": {
+    "found": [
+     "0.0",
+     "0.1",
+     "0.2",
+     "0.3",
+     "0.4",
+     "0.6",
+     "0.8"
+    ]
+   }
+  },
+  {
+   "constraint": "frame_navy_stroke",
+   "audit_executed": true,
+   "passed": true,
+   "evidence": {
+    "stroke": "#1C4065"
+   }
+  },
+  {
+   "constraint": "flow_connectors_traced",
+   "audit_executed": true,
+   "passed": true,
+   "evidence": {
+    "n_paths": 27
+   }
+  },
+  {
+   "constraint": "species_name_italic",
+   "audit_executed": true,
+   "passed": true,
+   "evidence": {
+    "style": "italic"
+   }
+  },
+  {
+   "constraint": "text_layer_present",
+   "audit_executed": true,
+   "passed": true,
+   "evidence": {
+    "n_texts": 40
+   }
+  },
+  {
+   "constraint": "crops_self_contained",
+   "audit_executed": true,
+   "passed": true,
+   "evidence": {
+    "n_images": 17
+   }
+  }
+ ],
+ "passed": true
+}

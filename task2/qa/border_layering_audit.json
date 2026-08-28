@@ -1,0 +1,12 @@
+{
+ "containers": [
+  {
+   "id": "methods_strip_frame",
+   "fill_none_outline_only": true,
+   "stroke_width": "2.6",
+   "is_only_rect": true,
+   "passed": true
+  }
+ ],
+ "passed": true
+}

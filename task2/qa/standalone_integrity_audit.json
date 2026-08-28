@@ -1,0 +1,49 @@
+{
+ "modules": [
+  {
+   "id": "chart_rmsd",
+   "margin_px": 4,
+   "passed": true
+  },
+  {
+   "id": "methods_strip_frame",
+   "margin_px": 3,
+   "passed": true
+  },
+  {
+   "id": "labels",
+   "margin_px": 8,
+   "passed": true
+  },
+  {
+   "id": "flow_connectors",
+   "margin_px": 6,
+   "passed": true
+  },
+  {
+   "id": "card_pg_bacterium",
+   "size": [
+    336,
+    644
+   ],
+   "passed": true
+  },
+  {
+   "id": "card_bloodstream",
+   "size": [
+    292,
+    502
+   ],
+   "passed": true
+  },
+  {
+   "id": "card_ab_structure",
+   "size": [
+    348,
+    302
+   ],
+   "passed": true
+  }
+ ],
+ "passed": true
+}

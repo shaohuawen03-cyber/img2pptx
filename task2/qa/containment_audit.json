@@ -1,0 +1,19 @@
+{
+ "checks": [
+  {
+   "check": "crops_inside_canvas",
+   "passed": true
+  },
+  {
+   "check": "cards_mutually_exclusive",
+   "violations": [],
+   "passed": true
+  },
+  {
+   "check": "chart_zone_pure_vector",
+   "violations": [],
+   "passed": true
+  }
+ ],
+ "passed": true
+}

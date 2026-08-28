@@ -1,0 +1,31 @@
+{
+ "checks": [
+  {
+   "check": "no_text_on_divider_lines",
+   "violations": [],
+   "passed": true
+  },
+  {
+   "check": "chart_x_ticks_evenly_spaced",
+   "gaps": [
+    53.3,
+    53.3,
+    53.3,
+    53.3,
+    53.3
+   ],
+   "passed": true
+  },
+  {
+   "check": "chart_y_ticks_evenly_spaced",
+   "gaps": [
+    27.1,
+    27.2,
+    27.1,
+    27.1
+   ],
+   "passed": true
+  }
+ ],
+ "passed": true
+}

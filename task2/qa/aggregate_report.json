@@ -1,0 +1,64 @@
+{
+ "layout_skeleton": true,
+ "standalone_integrity": true,
+ "containment": true,
+ "alignment_spacing": true,
+ "border_layering": true,
+ "semantic_constraints": true,
+ "constraint_coverage": true,
+ "visual_similarity": {
+  "whole_image_mae": 5.96,
+  "components": [
+   {
+    "id": "chart",
+    "bbox": [
+     985,
+     745,
+     1340,
+     948
+    ],
+    "mae": 18.31
+   },
+   {
+    "id": "methods_strip",
+    "bbox": [
+     10,
+     682,
+     1610,
+     946
+    ],
+    "mae": 9.79
+   },
+   {
+    "id": "bacterium_card",
+    "bbox": [
+     14,
+     58,
+     350,
+     702
+    ],
+    "mae": 0.83
+   },
+   {
+    "id": "bloodstream_card",
+    "bbox": [
+     595,
+     158,
+     887,
+     660
+    ],
+    "mae": 0.0
+   },
+   {
+    "id": "ab_card",
+    "bbox": [
+     1258,
+     370,
+     1606,
+     672
+    ],
+    "mae": 3.93
+   }
+  ]
+ }
+}

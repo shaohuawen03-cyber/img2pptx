@@ -1,0 +1,21 @@
+{
+ "checks": [
+  {
+   "check": "methods_frame_geometry",
+   "passed": true
+  },
+  {
+   "check": "three_method_cells_dividers",
+   "dividers": [
+    451.0,
+    840.0
+   ],
+   "passed": true
+  },
+  {
+   "check": "chart_axes_at_detected_pixel_positions",
+   "passed": true
+  }
+ ],
+ "passed": true
+}
