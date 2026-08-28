@@ -1042,5 +1042,14 @@
    "reason": "source OCR garbled ('(srl) aw', conf 0.72); inferred from '1 microsecond MD simulation' context",
    "status": "needs-human-review"
   }
- ]
+ ],
+ "pptx": {
+  "file": "final.pptx",
+  "svg_primary": true,
+  "png_fallback": true,
+  "embedded_svg_sha256": "0c2ff7d72c45ba83c7ed6c9e12cf991c011708da26117e7036f15d2249d444ed",
+  "conversion_readiness": "verified structurally (svgBlip, rels, content types)",
+  "fidelity_after_powerpoint_conversion": "not verified - no PowerPoint in sandbox"
+ },
+ "xlink_note": "images use xlink:href (SVG 1.1) for PowerPoint/importer compatibility"
 }
