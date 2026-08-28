@@ -5,9 +5,9 @@
    "audit_executed": true,
    "passed": true,
    "evidence": {
-    "hits": 32,
+    "hits": 33,
     "total": 38,
-    "rate": 0.842
+    "rate": 0.868
    }
   },
   {
@@ -92,11 +92,19 @@
    }
   },
   {
-   "constraint": "crops_self_contained",
+   "constraint": "fully_vector_no_raster_images",
    "audit_executed": true,
    "passed": true,
    "evidence": {
-    "n_images": 17
+    "n_images": 0
+   }
+  },
+  {
+   "constraint": "vector_shape_layer_present",
+   "audit_executed": true,
+   "passed": true,
+   "evidence": {
+    "n_paths": 296
    }
   }
  ],

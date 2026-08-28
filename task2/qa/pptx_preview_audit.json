@@ -6,7 +6,7 @@
   },
   {
    "check": "embedded_svg_matches_full_svg_by_hash",
-   "sha256": "0c2ff7d72c45ba83c7ed6c9e12cf991c011708da26117e7036f15d2249d444ed",
+   "sha256": "4073c795db1dac982dd52ef2d0f1de06eb0480d82e9ba590bf2a696a5dff5089",
    "passed": true
   },
   {
@@ -32,14 +32,14 @@
   },
   {
    "check": "nested_groups_and_texts_in_svg",
-   "n_groups": 21,
+   "n_groups": 38,
    "n_texts": 40,
    "passed": true
   },
   {
    "check": "no_unsupported_features",
    "foreignObject/filter": true,
-   "self_contained_data_uri_images": 17,
+   "self_contained_data_uri_images": 0,
    "passed": true
   }
  ],

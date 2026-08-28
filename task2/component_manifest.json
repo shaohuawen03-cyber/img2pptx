@@ -39,7 +39,8 @@
    "semantic_role": "illustration module",
    "export": true,
    "notes": "",
-   "representation": "raster-image"
+   "representation": "svg-shapes",
+   "n_colors": 13
   },
   {
    "id": "card_bloodstream",
@@ -54,7 +55,8 @@
    "semantic_role": "illustration module",
    "export": true,
    "notes": "",
-   "representation": "raster-image"
+   "representation": "svg-shapes",
+   "n_colors": 13
   },
   {
    "id": "card_ab_structure",
@@ -69,7 +71,8 @@
    "semantic_role": "illustration module",
    "export": true,
    "notes": "",
-   "representation": "raster-image"
+   "representation": "svg-shapes",
+   "n_colors": 13
   },
   {
    "id": "motif_gingipains",
@@ -84,7 +87,8 @@
    "semantic_role": "illustration module",
    "export": true,
    "notes": "",
-   "representation": "raster-image"
+   "representation": "svg-shapes",
+   "n_colors": 7
   },
   {
    "id": "motif_omv_dots",
@@ -99,7 +103,8 @@
    "semantic_role": "illustration module",
    "export": true,
    "notes": "",
-   "representation": "raster-image"
+   "representation": "svg-shapes",
+   "n_colors": 8
   },
   {
    "id": "motif_brainhead",
@@ -114,7 +119,8 @@
    "semantic_role": "illustration module",
    "export": true,
    "notes": "",
-   "representation": "raster-image"
+   "representation": "svg-shapes",
+   "n_colors": 9
   },
   {
    "id": "motif_pale_corridor",
@@ -129,7 +135,8 @@
    "semantic_role": "illustration module",
    "export": true,
    "notes": "",
-   "representation": "raster-image"
+   "representation": "svg-shapes",
+   "n_colors": 9
   },
   {
    "id": "motif_neuron",
@@ -144,7 +151,8 @@
    "semantic_role": "illustration module",
    "export": true,
    "notes": "",
-   "representation": "raster-image"
+   "representation": "svg-shapes",
+   "n_colors": 5
   },
   {
    "id": "motif_plaques",
@@ -159,7 +167,8 @@
    "semantic_role": "illustration module",
    "export": true,
    "notes": "",
-   "representation": "raster-image"
+   "representation": "svg-shapes",
+   "n_colors": 8
   },
   {
    "id": "motif_tau",
@@ -174,7 +183,8 @@
    "semantic_role": "illustration module",
    "export": true,
    "notes": "",
-   "representation": "raster-image"
+   "representation": "svg-shapes",
+   "n_colors": 3
   },
   {
    "id": "motif_tau_frag",
@@ -189,7 +199,8 @@
    "semantic_role": "illustration module",
    "export": true,
    "notes": "",
-   "representation": "raster-image"
+   "representation": "svg-shapes",
+   "n_colors": 5
   },
   {
    "id": "motif_blue_icon",
@@ -204,7 +215,8 @@
    "semantic_role": "illustration module",
    "export": true,
    "notes": "",
-   "representation": "raster-image"
+   "representation": "svg-shapes",
+   "n_colors": 4
   },
   {
    "id": "motif_icon_geo",
@@ -219,7 +231,8 @@
    "semantic_role": "illustration module",
    "export": true,
    "notes": "",
-   "representation": "raster-image"
+   "representation": "svg-shapes",
+   "n_colors": 7
   },
   {
    "id": "motif_heatmap",
@@ -234,7 +247,8 @@
    "semantic_role": "illustration module",
    "export": true,
    "notes": "",
-   "representation": "raster-image"
+   "representation": "svg-shapes",
+   "n_colors": 9
   },
   {
    "id": "motif_docking",
@@ -249,7 +263,8 @@
    "semantic_role": "illustration module",
    "export": true,
    "notes": "",
-   "representation": "raster-image"
+   "representation": "svg-shapes",
+   "n_colors": 8
   },
   {
    "id": "motif_md_model",
@@ -264,7 +279,8 @@
    "semantic_role": "illustration module",
    "export": true,
    "notes": "",
-   "representation": "raster-image"
+   "representation": "svg-shapes",
+   "n_colors": 5
   },
   {
    "id": "motif_protein_br",
@@ -279,7 +295,8 @@
    "semantic_role": "illustration module",
    "export": true,
    "notes": "",
-   "representation": "raster-image"
+   "representation": "svg-shapes",
+   "n_colors": 8
   },
   {
    "id": "flow_connectors",
@@ -327,7 +344,7 @@
    ]
   },
   {
-   "id": "text_93821863",
+   "id": "text_74091551",
    "label": "label: 'P. gingivalis'",
    "level": "atomic-element",
    "bbox": [
@@ -345,7 +362,7 @@
    ]
   },
   {
-   "id": "text_30429800",
+   "id": "text_70154235",
    "label": "label: 'neuron'",
    "level": "atomic-element",
    "bbox": [
@@ -363,7 +380,7 @@
    ]
   },
   {
-   "id": "text_72781544",
+   "id": "text_90325774",
    "label": "label: 'amyloid-β'",
    "level": "atomic-element",
    "bbox": [
@@ -381,7 +398,7 @@
    ]
   },
   {
-   "id": "text_35756906",
+   "id": "text_51816039",
    "label": "label: 'plaques'",
    "level": "atomic-element",
    "bbox": [
@@ -399,7 +416,7 @@
    ]
   },
   {
-   "id": "text_12393010",
+   "id": "text_53414601",
    "label": "label: 'BBB'",
    "level": "atomic-element",
    "bbox": [
@@ -417,7 +434,7 @@
    ]
   },
   {
-   "id": "text_40167936",
+   "id": "text_42651740",
    "label": "label: 'brain'",
    "level": "atomic-element",
    "bbox": [
@@ -435,7 +452,7 @@
    ]
   },
   {
-   "id": "text_72119172",
+   "id": "text_87166533",
    "label": "label: 'bloodstream'",
    "level": "atomic-element",
    "bbox": [
@@ -453,7 +470,7 @@
    ]
   },
   {
-   "id": "text_93553453",
+   "id": "text_15271035",
    "label": "label: 'tau'",
    "level": "atomic-element",
    "bbox": [
@@ -471,7 +488,7 @@
    ]
   },
   {
-   "id": "text_82129699",
+   "id": "text_99821179",
    "label": "label: 'gingipains/OMVs'",
    "level": "atomic-element",
    "bbox": [
@@ -489,7 +506,7 @@
    ]
   },
   {
-   "id": "text_1738266",
+   "id": "text_29010416",
    "label": "label: 'fragments'",
    "level": "atomic-element",
    "bbox": [
@@ -507,7 +524,7 @@
    ]
   },
   {
-   "id": "text_83221814",
+   "id": "text_63224307",
    "label": "label: 'gingipains'",
    "level": "atomic-element",
    "bbox": [
@@ -525,7 +542,7 @@
    ]
   },
   {
-   "id": "text_79934838",
+   "id": "text_85773141",
    "label": "label: 'AChE-Aβ nucleation'",
    "level": "atomic-element",
    "bbox": [
@@ -543,7 +560,7 @@
    ]
   },
   {
-   "id": "text_63968346",
+   "id": "text_35561416",
    "label": "label: 'PAS'",
    "level": "atomic-element",
    "bbox": [
@@ -561,7 +578,7 @@
    ]
   },
   {
-   "id": "text_73954873",
+   "id": "text_25138876",
    "label": "label: 'Aβ peptide'",
    "level": "atomic-element",
    "bbox": [
@@ -579,7 +596,7 @@
    ]
   },
   {
-   "id": "text_25201586",
+   "id": "text_94189818",
    "label": "label: 'RgpA'",
    "level": "atomic-element",
    "bbox": [
@@ -597,7 +614,7 @@
    ]
   },
   {
-   "id": "text_97198826",
+   "id": "text_13244266",
    "label": "label: 'RgpB'",
    "level": "atomic-element",
    "bbox": [
@@ -615,7 +632,7 @@
    ]
   },
   {
-   "id": "text_42860178",
+   "id": "text_34045280",
    "label": "label: 'Kgp'",
    "level": "atomic-element",
    "bbox": [
@@ -633,7 +650,7 @@
    ]
   },
   {
-   "id": "text_57735011",
+   "id": "text_36275930",
    "label": "label: 'OMVs'",
    "level": "atomic-element",
    "bbox": [
@@ -651,7 +668,7 @@
    ]
   },
   {
-   "id": "text_90094961",
+   "id": "text_63933877",
    "label": "label: 'surface patch'",
    "level": "atomic-element",
    "bbox": [
@@ -669,7 +686,7 @@
    ]
   },
   {
-   "id": "text_22307008",
+   "id": "text_61973093",
    "label": "label: 'residues344-361'",
    "level": "atomic-element",
    "bbox": [
@@ -687,7 +704,7 @@
    ]
   },
   {
-   "id": "text_81625281",
+   "id": "text_13925436",
    "label": "label: '1 microsecond'",
    "level": "atomic-element",
    "bbox": [
@@ -705,7 +722,7 @@
    ]
   },
   {
-   "id": "text_97165149",
+   "id": "text_54062149",
    "label": "label: 'transcriptomics'",
    "level": "atomic-element",
    "bbox": [
@@ -723,7 +740,7 @@
    ]
   },
   {
-   "id": "text_87711363",
+   "id": "text_77713222",
    "label": "label: 'molecular docking'",
    "level": "atomic-element",
    "bbox": [
@@ -741,7 +758,7 @@
    ]
   },
   {
-   "id": "text_82236578",
+   "id": "text_98937235",
    "label": "label: 'GEO'",
    "level": "atomic-element",
    "bbox": [
@@ -759,7 +776,7 @@
    ]
   },
   {
-   "id": "text_63495249",
+   "id": "text_78089199",
    "label": "label: 'MD simulation'",
    "level": "atomic-element",
    "bbox": [
@@ -777,7 +794,7 @@
    ]
   },
   {
-   "id": "text_82236578",
+   "id": "text_98937235",
    "label": "label: 'GEO'",
    "level": "atomic-element",
    "bbox": [
@@ -795,7 +812,7 @@
    ]
   },
   {
-   "id": "text_22246098",
+   "id": "text_83425214",
    "label": "label: '1μs'",
    "level": "atomic-element",
    "bbox": [
@@ -829,7 +846,8 @@
    "n_texts": 27
   }
  ],
- "raster_crops": [
+ "raster_crops": [],
+ "vector_regions": [
   {
    "id": "card_pg_bacterium",
    "bbox": [
@@ -838,9 +856,8 @@
     336,
     644
    ],
-   "png_bytes": 315954,
-   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
-   "replaceable_by_vector": "needs-human-redraw"
+   "n_colors": 13,
+   "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
    "id": "card_bloodstream",
@@ -850,9 +867,8 @@
     292,
     502
    ],
-   "png_bytes": 194098,
-   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
-   "replaceable_by_vector": "needs-human-redraw"
+   "n_colors": 13,
+   "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
    "id": "card_ab_structure",
@@ -862,9 +878,8 @@
     348,
     302
    ],
-   "png_bytes": 129662,
-   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
-   "replaceable_by_vector": "needs-human-redraw"
+   "n_colors": 13,
+   "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
    "id": "motif_gingipains",
@@ -874,9 +889,8 @@
     236,
     266
    ],
-   "png_bytes": 43379,
-   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
-   "replaceable_by_vector": "needs-human-redraw"
+   "n_colors": 7,
+   "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
    "id": "motif_omv_dots",
@@ -886,9 +900,8 @@
     188,
     126
    ],
-   "png_bytes": 34768,
-   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
-   "replaceable_by_vector": "needs-human-redraw"
+   "n_colors": 8,
+   "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
    "id": "motif_brainhead",
@@ -898,9 +911,8 @@
     262,
     252
    ],
-   "png_bytes": 67960,
-   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
-   "replaceable_by_vector": "needs-human-redraw"
+   "n_colors": 9,
+   "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
    "id": "motif_pale_corridor",
@@ -910,9 +922,8 @@
     192,
     377
    ],
-   "png_bytes": 90210,
-   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
-   "replaceable_by_vector": "needs-human-redraw"
+   "n_colors": 9,
+   "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
    "id": "motif_neuron",
@@ -922,9 +933,8 @@
     212,
     102
    ],
-   "png_bytes": 13855,
-   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
-   "replaceable_by_vector": "needs-human-redraw"
+   "n_colors": 5,
+   "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
    "id": "motif_plaques",
@@ -934,9 +944,8 @@
     177,
     207
    ],
-   "png_bytes": 32568,
-   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
-   "replaceable_by_vector": "needs-human-redraw"
+   "n_colors": 8,
+   "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
    "id": "motif_tau",
@@ -946,9 +955,8 @@
     127,
     97
    ],
-   "png_bytes": 6631,
-   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
-   "replaceable_by_vector": "needs-human-redraw"
+   "n_colors": 3,
+   "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
    "id": "motif_tau_frag",
@@ -958,9 +966,8 @@
     147,
     127
    ],
-   "png_bytes": 9483,
-   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
-   "replaceable_by_vector": "needs-human-redraw"
+   "n_colors": 5,
+   "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
    "id": "motif_blue_icon",
@@ -970,9 +977,8 @@
     94,
     94
    ],
-   "png_bytes": 11352,
-   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
-   "replaceable_by_vector": "needs-human-redraw"
+   "n_colors": 4,
+   "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
    "id": "motif_icon_geo",
@@ -982,9 +988,8 @@
     94,
     132
    ],
-   "png_bytes": 10293,
-   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
-   "replaceable_by_vector": "needs-human-redraw"
+   "n_colors": 7,
+   "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
    "id": "motif_heatmap",
@@ -994,9 +999,8 @@
     234,
     182
    ],
-   "png_bytes": 42045,
-   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
-   "replaceable_by_vector": "needs-human-redraw"
+   "n_colors": 9,
+   "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
    "id": "motif_docking",
@@ -1006,9 +1010,8 @@
     239,
     162
    ],
-   "png_bytes": 39688,
-   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
-   "replaceable_by_vector": "needs-human-redraw"
+   "n_colors": 8,
+   "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
    "id": "motif_md_model",
@@ -1018,9 +1021,8 @@
     114,
     142
    ],
-   "png_bytes": 17365,
-   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
-   "replaceable_by_vector": "needs-human-redraw"
+   "n_colors": 5,
+   "render_strategy": "kmeans-quantize + potrace bezier trace"
   },
   {
    "id": "motif_protein_br",
@@ -1030,9 +1032,8 @@
     264,
     226
    ],
-   "png_bytes": 75359,
-   "reason": "complex biological illustration; vectorization without vision would materially reduce fidelity",
-   "replaceable_by_vector": "needs-human-redraw"
+   "n_colors": 8,
+   "render_strategy": "kmeans-quantize + potrace bezier trace"
   }
  ],
  "low_confidence_items": [
@@ -1043,13 +1044,40 @@
    "status": "needs-human-review"
   }
  ],
+ "representation_note": "ALL elements are vector: illustrations vectorized via k-means color quantization + potrace bezier tracing (no <image> elements). Replaced the earlier minimal raster-crop strategy at user request; MAE 5.96 -> 13.65 is the measured cost of full vectorization (quantization).",
+ "visual_optimization": {
+  "history": [
+   {
+    "stage": "raster-crop composition",
+    "mae": 5.96,
+    "note": "pixel-exact crops; rejected by user (wanted full vector)"
+   },
+   {
+    "stage": "full vectorization K=14/10 turd16 tol0.4",
+    "mae": 13.65,
+    "accepted": true
+   },
+   {
+    "stage": "K=18/12 turd10 tol0.25",
+    "mae": 14.32,
+    "accepted": false,
+    "note": "finer quantization fragmented shapes; rolled back"
+   }
+  ],
+  "final_mae": 13.65,
+  "soft_target_reached": false,
+  "stopping_reason": "quantization floor of blind color-cluster vectorization; text layer separately limited by font substitution"
+ },
  "pptx": {
   "file": "final.pptx",
   "svg_primary": true,
   "png_fallback": true,
-  "embedded_svg_sha256": "0c2ff7d72c45ba83c7ed6c9e12cf991c011708da26117e7036f15d2249d444ed",
+  "embedded_svg_sha256": "4073c795db1dac982dd52ef2d0f1de06eb0480d82e9ba590bf2a696a5dff5089",
   "conversion_readiness": "verified structurally (svgBlip, rels, content types)",
   "fidelity_after_powerpoint_conversion": "not verified - no PowerPoint in sandbox"
  },
- "xlink_note": "images use xlink:href (SVG 1.1) for PowerPoint/importer compatibility"
+ "human_review_summary": {
+  "chart_x_title": "source OCR garbled; rendered 'Time (μs)' from MD context",
+  "vectorized_illustrations": "color-quantized bezier approximations of the source cartoons; silhouettes faithful (IoU 0.88-0.97 per color), fine texture simplified"
+ }
 }

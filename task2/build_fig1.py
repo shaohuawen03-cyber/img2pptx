@@ -17,6 +17,7 @@ import re
 
 import cv2
 import numpy as np
+import potrace
 from PIL import Image
 from skimage.morphology import medial_axis
 
@@ -112,6 +113,84 @@ def crop_module(name, x, y, w, h, text_boxes):
     buf = io.BytesIO()
     Image.fromarray(clean).save(buf, "PNG", optimize=True)
     return buf.getvalue()
+
+
+def _trace_mask_to_d(mask2x):
+    """potrace a 2x-upscaled binary mask -> SVG path data (2x coords).
+
+    potracer's Bitmap inverts its bool input internally, so pass ~ink to
+    have the ink region traced.
+    """
+    bm = potrace.Bitmap(~(mask2x > 127))
+    try:
+        pl = bm.trace(turdsize=16, alphamax=1.0, opttolerance=0.4)
+    except Exception:
+        return None
+    parts = []
+    for curve in pl:
+        start = curve.start_point
+        segs = "M {:.1f} {:.1f}".format(start.x, start.y)
+        for seg in curve:
+            if seg.is_corner:
+                segs += " L {:.1f} {:.1f} L {:.1f} {:.1f}".format(
+                    seg.c.x, seg.c.y, seg.end_point.x, seg.end_point.y)
+            else:
+                segs += " C {:.1f} {:.1f} {:.1f} {:.1f} {:.1f} {:.1f}".format(
+                    seg.c1.x, seg.c1.y, seg.c2.x, seg.c2.y,
+                    seg.end_point.x, seg.end_point.y)
+        parts.append(segs + " Z")
+    return " ".join(parts) if parts else None
+
+
+def vectorize_module(name, x, y, w, h, text_boxes):
+    """Region -> inpaint text -> k-means quantize -> per-color potrace paths.
+
+    Returns (svg_group_body, stats). Coordinates: traced at 2x, mapped back
+    via transform="translate(x,y) scale(0.5)".
+    """
+    region = bgr[max(0, y):y + h, max(0, x):x + w].copy()
+    mask = np.zeros(region.shape[:2], np.uint8)
+    for t in text_boxes:
+        tx0, ty0, tx1, ty1 = t["x0"] - x, t["y0"] - y, t["x1"] - x, t["y1"] - y
+        if tx1 < 0 or ty1 < 0 or tx0 >= region.shape[1] or ty0 >= region.shape[0]:
+            continue
+        cv2.rectangle(mask, (max(0, tx0 - 2), max(0, ty0 - 2)),
+                      (min(region.shape[1] - 1, tx1 + 2),
+                       min(region.shape[0] - 1, ty1 + 2)), 255, -1)
+    if mask.any():
+        region = cv2.inpaint(region, mask, 4, cv2.INPAINT_TELEA)
+    rgb = cv2.cvtColor(region, cv2.COLOR_BGR2RGB)
+    med = cv2.medianBlur(rgb, 5)
+    K = 14 if w * h > 80000 else 10
+    data = med.reshape(-1, 3).astype(np.float32)
+    crit = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 20, 1.0)
+    _, label, center = cv2.kmeans(data, K, None, crit, 3, cv2.KMEANS_PP_CENTERS)
+    label_img = label.reshape(med.shape[:2])
+    fracs = [(int((label_img == i).sum()), i) for i in range(K)]
+    fracs.sort(reverse=True)
+    total = med.shape[0] * med.shape[1]
+    body, stats = [], []
+    for area, i in fracs:
+        frac = area / total
+        if frac > 0.985 or frac < 0.0005:
+            continue
+        if float(center[i].mean()) > 241:   # near-white: page bg is white
+            continue
+        m = (label_img == i).astype(np.uint8) * 255
+        m = cv2.morphologyEx(m, cv2.MORPH_OPEN, np.ones((3, 3), np.uint8))
+        m = cv2.morphologyEx(m, cv2.MORPH_CLOSE, np.ones((5, 5), np.uint8))
+        m2 = cv2.resize(m, None, fx=2, fy=2, interpolation=cv2.INTER_NEAREST)
+        m2 = cv2.medianBlur(m2, 3)
+        d = _trace_mask_to_d(m2)
+        if not d:
+            continue
+        col = "#%02X%02X%02X" % tuple(int(round(v)) for v in center[i])
+        body.append(f'<path fill="{col}" fill-rule="evenodd" d="{d}"/>')
+        stats.append({"color": col, "frac": round(frac, 4)})
+    inner = "".join(body)
+    group_body = (f'<g id="{name}_shapes" '
+                  f'transform="translate({x} {y}) scale(0.5)">{inner}</g>')
+    return group_body, {"n_colors": len(stats), "colors": stats}
 
 
 # ---------------------------------------------------------------- arrows
@@ -269,7 +348,7 @@ def build():
         "task": "img2pptx blind reconstruction of fig1_graphical_abstract.png",
         "normalized_input": {"file": SRC, "width": W, "height": H,
                              "aspect": round(W / H, 4)},
-        "components": [], "raster_crops": [],
+        "components": [], "raster_crops": [], "vector_regions": [],
         "low_confidence_items": [],
     }
     comps = manifest["components"]
@@ -298,25 +377,23 @@ def build():
          source_observations=["dark navy border rgb(28,64,101) at y=687, x=15",
                               "pale dividers at x=451, x=840"])
 
-    # ---- raster cards + motifs
+    # ---- vectorized cards + motifs (k-means color quantization + potrace)
     text_boxes = ocr
+    vstats = {}
     for name, x, y, w, h in CARDS + MOTIFS:
-        png = crop_module(name, x, y, w, h, text_boxes)
-        b64 = base64.b64encode(png).decode()
-        parts.append(("<g id=\"%s\">" % name,
-                      f'<image x="{x}" y="{y}" width="{w}" height="{h}" '
-                      f'preserveAspectRatio="none" '
-                      f'xlink:href="data:image/png;base64,{b64}"/>', "</g>"))
-        manifest["raster_crops"].append({
-            "id": name, "bbox": [x, y, w, h], "png_bytes": len(png),
-            "reason": "complex biological illustration; vectorization without "
-                      "vision would materially reduce fidelity",
-            "replaceable_by_vector": "needs-human-redraw",
+        gbody, st = vectorize_module(name, x, y, w, h, text_boxes)
+        parts.append((f'<g id="{name}">', gbody, "</g>"))
+        vstats[name] = st
+        manifest["vector_regions"].append({
+            "id": name, "bbox": [x, y, w, h],
+            "n_colors": st["n_colors"],
+            "render_strategy": "kmeans-quantize + potrace bezier trace",
         })
         comp(name, name.replace("_", " "), "semantic-unit" if name in
              [c[0] for c in CARDS] else "combination-submodule",
              [x, y, x + w, y + h], "illustration module",
-             representation="raster-image")
+             representation="svg-shapes",
+             n_colors=st["n_colors"])
 
     # ---- arrows
     exclude = [(x, y, w, h) for _, x, y, w, h in CARDS + MOTIFS]
@@ -396,9 +473,8 @@ def build():
                   "'1 microsecond MD simulation' context",
         "status": "needs-human-review"})
 
-    svg = [f'<svg xmlns="http://www.w3.org/2000/svg" '
-           f'xmlns:xlink="http://www.w3.org/1999/xlink" width="{W}" height="{H}" '
-           f'viewBox="0 0 {W} {H}">',
+    svg = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" '
+           f'height="{H}" viewBox="0 0 {W} {H}">',
            f'<rect id="page_background" width="{W}" height="{H}" fill="#FFFFFF"/>']
     for open_tag, body, close_tag in parts:
         svg += [open_tag, body, close_tag]
@@ -407,8 +483,11 @@ def build():
     open("full.svg", "w").write(out)
     json.dump(manifest, open("component_manifest.json", "w"),
               ensure_ascii=False, indent=1)
+    n_paths = out.count("<path")
     print(f"full.svg written ({len(out)} bytes); arrows={len(arrows)}; "
-          f"curve pts={len(curve_pts)}; texts={len(t_el)}")
+          f"curve pts={len(curve_pts)}; texts={len(t_el)}; "
+          f"vector shapes={n_paths - len(arrows) - 1}; "
+          f"colors={sum(v['n_colors'] for v in vstats.values())}")
 
 
 if __name__ == "__main__":

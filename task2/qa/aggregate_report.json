@@ -7,7 +7,7 @@
  "semantic_constraints": true,
  "constraint_coverage": true,
  "visual_similarity": {
-  "whole_image_mae": 5.96,
+  "whole_image_mae": 13.65,
   "components": [
    {
     "id": "chart",
@@ -27,7 +27,7 @@
      1610,
      946
     ],
-    "mae": 9.79
+    "mae": 15.44
    },
    {
     "id": "bacterium_card",
@@ -37,7 +37,7 @@
      350,
      702
     ],
-    "mae": 0.83
+    "mae": 17.34
    },
    {
     "id": "bloodstream_card",
@@ -47,7 +47,7 @@
      887,
      660
     ],
-    "mae": 0.0
+    "mae": 13.73
    },
    {
     "id": "ab_card",
@@ -57,7 +57,7 @@
      1606,
      672
     ],
-    "mae": 3.93
+    "mae": 18.3
    }
   ]
  }

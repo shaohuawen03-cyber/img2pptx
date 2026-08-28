@@ -6,9 +6,9 @@
    "passed": true,
    "severity": "hard",
    "evidence": {
-    "hits": 32,
+    "hits": 33,
     "total": 38,
-    "rate": 0.842
+    "rate": 0.868
    }
   },
   {
@@ -101,12 +101,21 @@
    }
   },
   {
-   "id": "crops_self_contained",
-   "description": "All raster crops are inline data URIs",
+   "id": "fully_vector_no_raster_images",
+   "description": "Reconstruction contains zero embedded raster images (all vector)",
    "passed": true,
    "severity": "hard",
    "evidence": {
-    "n_images": 17
+    "n_images": 0
+   }
+  },
+  {
+   "id": "vector_shape_layer_present",
+   "description": "Illustrations vectorized as >=150 bezier shape paths",
+   "passed": true,
+   "severity": "hard",
+   "evidence": {
+    "n_paths": 296
    }
   }
  ],

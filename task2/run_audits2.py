@@ -106,7 +106,7 @@ for gid, (x0, y0, x1, y1) in MODZONES.items():
     ok = ink.any() and margin >= 2
     sa["modules"].append({"id": gid, "margin_px": int(margin), "passed": bool(ok)})
     sa["passed"] &= bool(ok)
-cards = [c for c in manifest["raster_crops"] if c["id"].startswith("card_")]
+cards = [c for c in manifest["vector_regions"] if c["id"].startswith("card_")]
 for c in cards:
     x, y, w, h = c["bbox"]
     m = ET.Element(NS + "svg", {"width": str(w), "height": str(h),
@@ -126,12 +126,12 @@ report["standalone_integrity"] = sa["passed"]
 # ============================================================ 3 containment
 ca = {"checks": [], "passed": True}
 ok = True
-for c in manifest["raster_crops"]:
+for c in manifest["vector_regions"]:
     x, y, w, h = c["bbox"]
     ok &= x >= -4 and y >= -4 and x + w <= W + 4 and y + h <= H + 4
 ca["checks"].append({"check": "crops_inside_canvas", "passed": bool(ok)})
 ca["passed"] &= bool(ok)
-rects = [c["bbox"] for c in manifest["raster_crops"] if c["id"].startswith("card_")]
+rects = [c["bbox"] for c in manifest["vector_regions"] if c["id"].startswith("card_")]
 ov = []
 for i, a_ in enumerate(rects):
     for b_ in rects[i + 1:]:
@@ -144,7 +144,7 @@ ca["checks"].append({"check": "cards_mutually_exclusive", "violations": ov,
                      "passed": bool(ok)})
 ca["passed"] &= bool(ok)
 bad = []
-for c in manifest["raster_crops"]:
+for c in manifest["vector_regions"]:
     x, y, w, h = c["bbox"]
     if not (x + w < cz[0] or y + h < cz[1] or x > cz[2] or y > cz[3]):
         bad.append(c["id"])
@@ -277,12 +277,15 @@ add("text_layer_present", "Editable text layer with >=27 labels", ok,
     {"n_texts": len(texts_all)})
 
 imgs = [i for i in root.iter(NS + "image")]
-XL = "{http://www.w3.org/1999/xlink}href"
-def _img_href(i):
-    return i.get(XL) or i.get("href") or ""
-ok = all(_img_href(i).startswith("data:image/png;base64,") for i in imgs)
-add("crops_self_contained", "All raster crops are inline data URIs", ok,
+ok = len(imgs) == 0
+add("fully_vector_no_raster_images",
+    "Reconstruction contains zero embedded raster images (all vector)", ok,
     {"n_images": len(imgs)})
+n_vpaths = sum(1 for g in groups.values() for p in g.iter(NS + "path"))
+ok = n_vpaths >= 150
+add("vector_shape_layer_present",
+    "Illustrations vectorized as >=150 bezier shape paths", ok,
+    {"n_paths": n_vpaths})
 
 
 def save_mask(name, boxes):
