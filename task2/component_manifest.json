@@ -1043,5 +1043,41 @@
    "reason": "source OCR garbled ('(srl) aw', conf 0.72); inferred from '1 microsecond MD simulation' context",
    "status": "needs-human-review"
   }
- ]
+ ],
+ "representation_note": "Full vector, region-merge style: illustrations via SLIC superpixels + closest-color region merging + potrace bezier (453 clean region shapes). Replaces the noisy per-pixel k-means layer that produced gear-shaped artifacts; boundary energy now SMOOTHER than source (edge-energy ratio 0.19-0.47 per zone).",
+ "visual_optimization": {
+  "history": [
+   {
+    "stage": "raster-crop composition",
+    "mae": 5.96,
+    "note": "pixel-exact crops; rejected by user (wanted full vector)"
+   },
+   {
+    "stage": "per-pixel k-means color layers + potrace",
+    "mae": 13.65,
+    "note": "REJECTED: gear-shaped artifacts and speckle along gradient boundaries (user report)"
+   },
+   {
+    "stage": "region-merge vectorization (SLIC + closest-color merge + potrace 2.5x smoothed)",
+    "mae": 13.9,
+    "accepted": true,
+    "note": "453 clean region shapes; edge-energy ratio render/src 0.19-0.47 per zone (smoother than source)"
+   }
+  ],
+  "final_mae": 13.9,
+  "soft_target_reached": false,
+  "stopping_reason": "quantization floor of blind region vectorization; text layer separately limited by font substitution"
+ },
+ "pptx": {
+  "file": "final.pptx",
+  "svg_primary": true,
+  "png_fallback": true,
+  "embedded_svg_sha256": "2860c37978bd525e7c43b25d0a58027feb35bf9f985f3ced2a6f14caaecd7876",
+  "conversion_readiness": "verified structurally (svgBlip, rels, content types)",
+  "fidelity_after_powerpoint_conversion": "not verified - no PowerPoint in sandbox"
+ },
+ "human_review_summary": {
+  "chart_x_title": "source OCR garbled; rendered 'Time (μs)' from MD context",
+  "vectorized_illustrations": "region-merged flat-color bezier approximation; clean silhouettes, gradients flatten to regions"
+ }
 }
