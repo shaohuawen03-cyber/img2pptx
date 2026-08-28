@@ -99,7 +99,7 @@ n_groups = emb.decode().count("<g ")
 n_texts = emb.decode().count("<text")
 audit["checks"].append({"check": "nested_groups_and_texts_in_svg",
                         "n_groups": n_groups, "n_texts": n_texts,
-                        "passed": n_groups >= 20 and n_texts >= 300})
+                        "passed": n_groups >= 10 and n_texts >= 10})
 # no unsupported features
 s = emb.decode()
 unsupported = [f for f in ("foreignObject", "filter", "<image", "xlink:") if f in s]

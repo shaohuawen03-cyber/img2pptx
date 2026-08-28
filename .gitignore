@@ -9,3 +9,6 @@ node_modules/
 
 task/prev_recon.png
 .agents/mcp_config.json
+task2/full_render.png
+task2/modules/*.png
+task2/final_raw.pptx
