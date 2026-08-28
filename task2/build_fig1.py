@@ -306,7 +306,7 @@ def build():
         parts.append(("<g id=\"%s\">" % name,
                       f'<image x="{x}" y="{y}" width="{w}" height="{h}" '
                       f'preserveAspectRatio="none" '
-                      f'href="data:image/png;base64,{b64}"/>', "</g>"))
+                      f'xlink:href="data:image/png;base64,{b64}"/>', "</g>"))
         manifest["raster_crops"].append({
             "id": name, "bbox": [x, y, w, h], "png_bytes": len(png),
             "reason": "complex biological illustration; vectorization without "
@@ -396,7 +396,8 @@ def build():
                   "'1 microsecond MD simulation' context",
         "status": "needs-human-review"})
 
-    svg = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
+    svg = [f'<svg xmlns="http://www.w3.org/2000/svg" '
+           f'xmlns:xlink="http://www.w3.org/1999/xlink" width="{W}" height="{H}" '
            f'viewBox="0 0 {W} {H}">',
            f'<rect id="page_background" width="{W}" height="{H}" fill="#FFFFFF"/>']
     for open_tag, body, close_tag in parts:

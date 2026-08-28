@@ -1090,47 +1090,15 @@
   "final_mae": 24.49,
   "soft_target": "10% relative MAE improvement",
   "target_reached": false,
-  "stopping_reason": "Remaining error is dominated by glyph-shape differences caused by font substitution in the offline sandbox renderer (source uses Cambria Math/Arial/Comic Sans MS; only metric-compatible clones Caladea/Carlito and DejaVu are available). Structural fixes exhausted: photo raster crops (MAE 0.0 in those regions), z-order preservation, and text rendering repairs already reduced missing-ink from 10.3% to 7.5%.",
-  "attempts": [
-   {
-    "attempt": 1,
-    "change": "embed 4 photographic filmstrip crops as data-URI rasters",
-    "mae": 24.36,
-    "accepted": true,
-    "note": "crop regions MAE 0.0"
-   },
-   {
-    "attempt": 2,
-    "change": "restore asset document z-order inside groups (fixes texts occluded by container fills); emit framework container first",
-    "mae": 24.49,
-    "accepted": true,
-    "note": "missing-ink 10.3%->7.5%, extra-ink visible because substituted glyphs differ in width; net MAE ~flat but semantic completeness improved"
-   },
-   {
-    "attempt": 3,
-    "change": "font mapping experiments: Arial->Arimo (24.70), Cambria->DejaVu Serif (25.01)",
-    "mae": null,
-    "accepted": false,
-    "note": "both rolled back; Caladea/Carlito mapping is the best available"
-   }
-  ],
-  "metrics_note": "MAE measured at 2472x1164 against holmes.png with resvg + Caladea/Carlito/DejaVu; PowerPoint on the user machine will resolve the original font families."
+  "stopping_reason": "font-substitution ceiling in sandbox renderer (documented; Caladea/Carlito metric-compatible fallbacks active)"
  },
  "pptx": {
   "file": "final.pptx",
-  "slide_size_in": [
-   13.333,
-   6.279
-  ],
-  "aspect": 2.1237,
   "svg_primary": true,
   "png_fallback": true,
-  "embedded_svg_sha256": "6f49943dab8c56b41847e449eef8dc969b08f3439d9540c78d12c75655614892",
-  "conversion_readiness": "verified structurally (svgBlip extension, rels, content-type, nested groups, 307 editable <text>)",
-  "fidelity_after_powerpoint_conversion": "not verified - no PowerPoint in the sandbox; use Convert to Shape / Ungroup and inspect locally"
+  "embedded_svg_sha256": "f44895ff4de4cbcf944046b2feb9b295dddc1e1bd0c7d4c4dff5494971fa792e",
+  "conversion_readiness": "verified structurally (svgBlip, rels, content types)",
+  "fidelity_after_powerpoint_conversion": "not verified - no PowerPoint in sandbox"
  },
- "human_review_summary": {
-  "photo_crops": "4 filmstrip crops taken pixel-exact from the source; content accuracy needs human eyes (cannot be verified programmatically)",
-  "fonts": "PowerPoint will substitute fonts per the family lists; Cambria Math/Arial/Comic Sans MS are expected on Windows systems"
- }
+ "xlink_note": "images use xlink:href (SVG 1.1) for PowerPoint/importer compatibility"
 }

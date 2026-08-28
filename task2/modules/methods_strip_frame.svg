@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="1600" height="264" viewBox="10 682 1600 264"><ns0:rect x="10" y="682" width="1600" height="264" fill="#FFFFFF" id="module_background" /><ns0:g id="methods_strip_frame">
-<ns0:rect x="15" y="687" width="1590" height="254" rx="10" fill="none" stroke="#1C4065" stroke-width="2.6" /><ns0:line x1="451" y1="693" x2="451" y2="935" stroke="#A0AEB9" stroke-width="1.6" /><ns0:line x1="840" y1="693" x2="840" y2="935" stroke="#A0AEB9" stroke-width="1.6" />
-</ns0:g>
-</ns0:svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="264" viewBox="10 682 1600 264"><rect x="10" y="682" width="1600" height="264" fill="#FFFFFF" id="module_background" /><g id="methods_strip_frame">
+<rect x="15" y="687" width="1590" height="254" rx="10" fill="none" stroke="#1C4065" stroke-width="2.6" /><line x1="451" y1="693" x2="451" y2="935" stroke="#A0AEB9" stroke-width="1.6" /><line x1="840" y1="693" x2="840" y2="935" stroke="#A0AEB9" stroke-width="1.6" />
+</g>
+</svg>

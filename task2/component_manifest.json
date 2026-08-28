@@ -327,7 +327,7 @@
    ]
   },
   {
-   "id": "text_21231308",
+   "id": "text_93821863",
    "label": "label: 'P. gingivalis'",
    "level": "atomic-element",
    "bbox": [
@@ -345,7 +345,7 @@
    ]
   },
   {
-   "id": "text_34482653",
+   "id": "text_30429800",
    "label": "label: 'neuron'",
    "level": "atomic-element",
    "bbox": [
@@ -363,7 +363,7 @@
    ]
   },
   {
-   "id": "text_33020972",
+   "id": "text_72781544",
    "label": "label: 'amyloid-β'",
    "level": "atomic-element",
    "bbox": [
@@ -381,7 +381,7 @@
    ]
   },
   {
-   "id": "text_26211686",
+   "id": "text_35756906",
    "label": "label: 'plaques'",
    "level": "atomic-element",
    "bbox": [
@@ -399,7 +399,7 @@
    ]
   },
   {
-   "id": "text_7908031",
+   "id": "text_12393010",
    "label": "label: 'BBB'",
    "level": "atomic-element",
    "bbox": [
@@ -417,7 +417,7 @@
    ]
   },
   {
-   "id": "text_39626263",
+   "id": "text_40167936",
    "label": "label: 'brain'",
    "level": "atomic-element",
    "bbox": [
@@ -435,7 +435,7 @@
    ]
   },
   {
-   "id": "text_15452990",
+   "id": "text_72119172",
    "label": "label: 'bloodstream'",
    "level": "atomic-element",
    "bbox": [
@@ -453,7 +453,7 @@
    ]
   },
   {
-   "id": "text_92021934",
+   "id": "text_93553453",
    "label": "label: 'tau'",
    "level": "atomic-element",
    "bbox": [
@@ -471,7 +471,7 @@
    ]
   },
   {
-   "id": "text_61326689",
+   "id": "text_82129699",
    "label": "label: 'gingipains/OMVs'",
    "level": "atomic-element",
    "bbox": [
@@ -489,7 +489,7 @@
    ]
   },
   {
-   "id": "text_8554757",
+   "id": "text_1738266",
    "label": "label: 'fragments'",
    "level": "atomic-element",
    "bbox": [
@@ -507,7 +507,7 @@
    ]
   },
   {
-   "id": "text_44360869",
+   "id": "text_83221814",
    "label": "label: 'gingipains'",
    "level": "atomic-element",
    "bbox": [
@@ -525,7 +525,7 @@
    ]
   },
   {
-   "id": "text_291263",
+   "id": "text_79934838",
    "label": "label: 'AChE-Aβ nucleation'",
    "level": "atomic-element",
    "bbox": [
@@ -543,7 +543,7 @@
    ]
   },
   {
-   "id": "text_97121958",
+   "id": "text_63968346",
    "label": "label: 'PAS'",
    "level": "atomic-element",
    "bbox": [
@@ -561,7 +561,7 @@
    ]
   },
   {
-   "id": "text_42650295",
+   "id": "text_73954873",
    "label": "label: 'Aβ peptide'",
    "level": "atomic-element",
    "bbox": [
@@ -579,7 +579,7 @@
    ]
   },
   {
-   "id": "text_95365560",
+   "id": "text_25201586",
    "label": "label: 'RgpA'",
    "level": "atomic-element",
    "bbox": [
@@ -597,7 +597,7 @@
    ]
   },
   {
-   "id": "text_60236709",
+   "id": "text_97198826",
    "label": "label: 'RgpB'",
    "level": "atomic-element",
    "bbox": [
@@ -615,7 +615,7 @@
    ]
   },
   {
-   "id": "text_89626021",
+   "id": "text_42860178",
    "label": "label: 'Kgp'",
    "level": "atomic-element",
    "bbox": [
@@ -633,7 +633,7 @@
    ]
   },
   {
-   "id": "text_39223610",
+   "id": "text_57735011",
    "label": "label: 'OMVs'",
    "level": "atomic-element",
    "bbox": [
@@ -651,7 +651,7 @@
    ]
   },
   {
-   "id": "text_40230545",
+   "id": "text_90094961",
    "label": "label: 'surface patch'",
    "level": "atomic-element",
    "bbox": [
@@ -669,7 +669,7 @@
    ]
   },
   {
-   "id": "text_45513192",
+   "id": "text_22307008",
    "label": "label: 'residues344-361'",
    "level": "atomic-element",
    "bbox": [
@@ -687,7 +687,7 @@
    ]
   },
   {
-   "id": "text_96385246",
+   "id": "text_81625281",
    "label": "label: '1 microsecond'",
    "level": "atomic-element",
    "bbox": [
@@ -705,7 +705,7 @@
    ]
   },
   {
-   "id": "text_74879975",
+   "id": "text_97165149",
    "label": "label: 'transcriptomics'",
    "level": "atomic-element",
    "bbox": [
@@ -723,7 +723,7 @@
    ]
   },
   {
-   "id": "text_5296960",
+   "id": "text_87711363",
    "label": "label: 'molecular docking'",
    "level": "atomic-element",
    "bbox": [
@@ -741,7 +741,7 @@
    ]
   },
   {
-   "id": "text_94043608",
+   "id": "text_82236578",
    "label": "label: 'GEO'",
    "level": "atomic-element",
    "bbox": [
@@ -759,7 +759,7 @@
    ]
   },
   {
-   "id": "text_98700451",
+   "id": "text_63495249",
    "label": "label: 'MD simulation'",
    "level": "atomic-element",
    "bbox": [
@@ -777,7 +777,7 @@
    ]
   },
   {
-   "id": "text_94043608",
+   "id": "text_82236578",
    "label": "label: 'GEO'",
    "level": "atomic-element",
    "bbox": [
@@ -795,7 +795,7 @@
    ]
   },
   {
-   "id": "text_59960965",
+   "id": "text_22246098",
    "label": "label: '1μs'",
    "level": "atomic-element",
    "bbox": [
@@ -1042,24 +1042,5 @@
    "reason": "source OCR garbled ('(srl) aw', conf 0.72); inferred from '1 microsecond MD simulation' context",
    "status": "needs-human-review"
   }
- ],
- "visual_optimization": {
-  "baseline_mae": 5.03,
-  "final_mae": 5.0,
-  "metric_note": "metric-compatible Carlito (Arial metrics) used for the text layer; completeness preferred over raw MAE",
-  "soft_target_reached": false,
-  "stopping_reason": "remaining error is glyph substitution; PowerPoint resolves real Arial from the same family list"
- },
- "pptx": {
-  "file": "final.pptx",
-  "svg_primary": true,
-  "png_fallback": true,
-  "embedded_svg_sha256": "238f20a0a2972769af8e134210dbae65cb593a26aee61538ddca434943a60679",
-  "conversion_readiness": "verified structurally",
-  "fidelity_after_powerpoint_conversion": "not verified - no PowerPoint in sandbox"
- },
- "human_review_summary": {
-  "chart_x_title": "source OCR garbled; rendered 'Time (μs)' from MD context",
-  "raster_cards": "biological illustrations preserved as pixel-exact inpainted crops"
- }
+ ]
 }

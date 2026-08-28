@@ -16,6 +16,8 @@ from PIL import Image, ImageDraw
 import resvg_py
 
 NS = {"svg": "http://www.w3.org/2000/svg"}
+ET.register_namespace("", "http://www.w3.org/2000/svg")
+ET.register_namespace("xlink", "http://www.w3.org/1999/xlink")
 SRC = "holmes.png"
 FULL = "full.svg"
 W, H = 2472, 1164

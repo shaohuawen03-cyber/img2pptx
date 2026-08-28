@@ -234,6 +234,8 @@ def main():
 
     # --- assemble full.svg
     ET.register_namespace("", NS_SVG)
+    XLINK = "http://www.w3.org/1999/xlink"
+    ET.register_namespace("xlink", XLINK)
     svg = ET.Element(f"{{{NS_SVG}}}svg", {
         "width": str(OUT_W), "height": str(OUT_H),
         "viewBox": f"0 0 {OUT_W} {OUT_H}", "overflow": "hidden"})
@@ -292,7 +294,7 @@ def main():
             "id": name + "_img", "x": str(x0), "y": str(y0),
             "width": str(x1 - x0), "height": str(y1 - y0),
             "preserveAspectRatio": "none",
-            "href": "data:image/png;base64," + b64})
+            f"{{{XLINK}}}href": "data:image/png;base64," + b64})
         crop_records.append({
             "id": name, "bbox_src": [x0, y0, x1, y1],
             "bytes": len(data), "w": x1 - x0, "h": y1 - y0})

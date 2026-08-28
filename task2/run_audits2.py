@@ -17,6 +17,8 @@ src = np.asarray(Image.open("fig1.png").convert("RGB"), float)
 report = {}
 
 NS = "{http://www.w3.org/2000/svg}"
+ET.register_namespace("", "http://www.w3.org/2000/svg")
+ET.register_namespace("xlink", "http://www.w3.org/1999/xlink")
 tree = ET.parse("full.svg")
 root = tree.getroot()
 groups = {g.get("id"): g for g in root.iter(NS + "g")}
@@ -275,7 +277,10 @@ add("text_layer_present", "Editable text layer with >=27 labels", ok,
     {"n_texts": len(texts_all)})
 
 imgs = [i for i in root.iter(NS + "image")]
-ok = all((i.get("href") or "").startswith("data:image/png;base64,") for i in imgs)
+XL = "{http://www.w3.org/1999/xlink}href"
+def _img_href(i):
+    return i.get(XL) or i.get("href") or ""
+ok = all(_img_href(i).startswith("data:image/png;base64,") for i in imgs)
 add("crops_self_contained", "All raster crops are inline data URIs", ok,
     {"n_images": len(imgs)})
 

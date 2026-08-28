@@ -60,7 +60,5 @@
     ]
    }
   ]
- },
- "pptx_package": true,
- "final_gate": "PASS - all structural, semantic, coverage, embedding audits green; visual optimization stopped at font-substitution ceiling (documented)"
+ }
 }
